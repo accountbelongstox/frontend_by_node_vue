@@ -1,0 +1,44 @@
+<div id="customContextMenu"
+    style="display: none; position: absolute; list-style-type: none; background-color: #f5f5f5; border: 1px solid #ccc;z-index: 9999999999999;">
+    <!-- 这是您的自定义右键菜单 -->
+
+    <div class="navbar-custom-menu">
+        <ul class="menu sm-scrol" style="overflow: hidden; width: auto;height: auto; ">
+            <li>
+                <a href="javascript:void(0)" onclick="window.appMenuManager.runAsAdmin()" class="contextMenuA">
+                    <img class="customContextMenuImg" src="" style="width: 30px;height: 30px;margin-left: -5px;" />
+                    运行软件(管理员)
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="window.appMenuManager.openSoftwareLocation()" class="contextMenuA">
+                    <i class="fa fa-folder-open"></i>
+                    软件位置
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="window.appMenuManager.openIconDir()" class="contextMenuA">
+                    <i class="fa  fa-file-o text-info"></i>
+                    图标位置 
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)"  onclick="window.appMenuManager.reInstall()" class="contextMenuA">
+                    <i class="fa fa-windows text-success"></i>
+                    重新安装
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" class="contextMenuA">
+                    <i class="fa  fa-cloud-download text-danger"></i>
+                    升级
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" class="contextMenuA">
+                    <i class="fa fa-download text-danger"></i> 备份
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

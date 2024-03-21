@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+{include:"./include_head.html"}
+<body class="hold-transition light-skin sidebar-mini theme-primary fixed sidebar-collapse">
+	
+<div class="wrapper">
+	
+
+  {include:"./include_header.html"}
+  
+  <!-- Left side column. contains the logo and sidebar -->
+  {include:"./include_main_sidebar.html"}
+  
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+	  <div class="container-full">
+		<!-- Content Header (Page header) -->
+		<div class="content-header">
+			<div class="d-flex align-items-center">
+				<div class="mr-auto">
+					<h3 class="page-title">Dropdown</h3>
+					<div class="d-inline-block align-items-center">
+						<nav>
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
+								<li class="breadcrumb-item" aria-current="page">UI</li>
+								<li class="breadcrumb-item active" aria-current="page">Dropdown</li>
+							</ol>
+						</nav>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<!-- Main content -->
+		<section class="content">
+
+			<div class="row">
+				<div class="col-12">
+
+					<div class="box">
+					  <div class="box-header with-border">
+						  <h4 class="box-title">Dropdown Basic <br><small>Dropdowns are toggleable, contextual overlays for displaying lists of links and more.</small></h4>
+					  </div>
+					  <div class="box-body doc-dropdown">
+						<div class="row">
+						  <!--Default!-->
+						  <div class="col-xl-4">
+							  <div class="h-200">
+								<h5>Default</h5>
+								<p>A basic example</p>
+									<div class="btn-group">
+									  <button class="btn btn-rounded btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown</button>
+									  <div class="dropdown-menu">
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+										<a class="dropdown-item" href="#">Something else here</a>
+									  </div>
+									</div>
+							  </div>						
+						  </div>
+
+						  <!--Alignment!-->
+						  <div class="col-xl-4">
+							  <div class="h-200">
+								<h5>Alignment</h5>
+								<p><code>.dropdown-menu-right</code> applies to <em>.dropdown-menu</em></p>
+
+									<div class="btn-group">
+									  <button class="btn btn-rounded btn-dark dropdown-toggle" type="button" data-toggle="dropdown">Dropdown</button>
+									  <div class="dropdown-menu dropdown-menu-right">
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+										<a class="dropdown-item" href="#">Something else here</a>
+									  </div>
+									</div>
+							  </div>
+						  </div>
+
+
+						  <!-- Dropup!-->
+						  <div class="col-xl-4">
+							  <div class="h-200">
+								<h5>Dropup</h5>
+								<p><code>.dropup</code> replaces with <em>.dropdown</em></p>
+
+									<div class="btn-group dropup">
+									  <button class="btn btn-rounded btn-success dropdown-toggle" type="button" data-toggle="dropdown">Dropup</button>
+									  <div class="dropdown-menu">
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+										<a class="dropdown-item" href="#">Something else here</a>
+									  </div>
+									</div>
+							  </div>
+						  </div>
+
+						  <!--Dropup alignment!-->
+						  <div class="col-xl-4">
+							  <div class="h-200">
+								<h5 class="mt-30">Dropup alignment</h5>
+								  <p><code>.dropdown-menu-right</code> applies to <em>.dropdown-menu</em></p>
+
+									<div class="btn-group dropup">
+									  <button class="btn btn-rounded btn-info dropdown-toggle" type="button" data-toggle="dropdown">Dropup</button>
+									  <div class="dropdown-menu dropdown-menu-right">
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+										<a class="dropdown-item" href="#">Something else here</a>
+									  </div>
+									</div>
+							  </div>
+						  </div>
+
+						  <!--No caret!-->
+						  <div class="col-xl-4">
+							  <div class="h-200">
+								<h5 class="mt-30">No caret</h5>
+								<p><code>.no-caret</code> applies to <em>.dropdown-toggle</em></p>
+
+									<div class="btn-group">
+									  <button class="btn btn-rounded btn-warning dropdown-toggle no-caret" type="button" data-toggle="dropdown">Dropdown</button>
+									  <div class="dropdown-menu">
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+										<a class="dropdown-item" href="#">Something else here</a>
+									  </div>
+									</div>
+							  </div>
+						  </div>
+
+						  <!--With icon!-->
+						  <div class="col-xl-4">
+							  <div class="h-200">
+								<h5 class="mt-30">With icon</h5>
+								<p><code>.icon</code> applies to <em>.dropdown-toggle</em></p>
+
+									<div class="btn-group">
+									  <button class="btn btn-rounded btn-danger dropdown-toggle" type="button" data-toggle="dropdown"><i class="icon ti-settings"></i> Dropdown</button>
+									  <div class="dropdown-menu dropdown-menu-right">
+										<a class="dropdown-item" href="#">Action</a>
+										<a class="dropdown-item" href="#">Another action</a>
+										<a class="dropdown-item" href="#">Something else here</a>
+									  </div>
+									</div>
+							  </div>
+						  </div>
+
+						</div>
+					  </div>
+					</div>				
+				</div>
+
+				<div class="col-12">				
+					<div class="box">
+					  <div class="box-header with-border">
+						  <h4 class="box-title">Dropdown menu <br><small>Dropdowns are toggleable, contextual overlays for displaying lists of links and more.</small></h4>
+					  </div>
+					  <div class="box-body doc-dropdown">
+						<div class="row">
+						  <!--Header!-->
+						  <div class="col-xl-4">
+							  <div class="h-200">
+								<h5>Header</h5>
+								  <div class="dropdown">
+									<button class="btn btn-rounded btn-outline btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown</button>
+									<div class="dropdown-menu">
+									  <h6 class="dropdown-header">Dropdown header</h6>
+									  <a class="dropdown-item" href="#">Action</a>
+									  <a class="dropdown-item" href="#">Another action</a>
+									  <a class="dropdown-item" href="#">Something else here</a>
+									</div>
+								  </div>
+							  </div>
+						  </div>
+
+						  <!--Divider!-->
+						  <div class="col-xl-4">
+							  <div class="h-200">
+								<h5>Divider</h5>
+
+								  <div class="dropdown">
+									<button class="btn btn-rounded btn-outline btn-success dropdown-toggle" type="button" data-toggle="dropdown">Dropdown</button>
+									<div class="dropdown-menu">
+									  <a class="dropdown-item" href="#">Action</a>
+									  <a class="dropdown-item" href="#">Another action</a>
+									  <a class="dropdown-item" href="#">Something else here</a>
+									  <div class="dropdown-divider"></div>
+									  <a class="dropdown-item" href="#">Separated link</a>
+									</div>
+								  </div>
+							  </div>
+						  </div>
+
+
+						  <!-- With icon!-->
+						  <div class="col-xl-4">
+							  <div class="h-200">
+								<h5>With icon</h5>
+
+								  <div class="dropdown">
+									<button class="btn btn-rounded btn-outline btn-dark dropdown-toggle" type="button" data-toggle="dropdown">Dropdown</button>
+									<div class="dropdown-menu">
+									  <a class="dropdown-item" href="#"><i class="fa fa-plus"></i> New</a>
+									  <a class="dropdown-item" href="#"><i class="fa fa-pencil"></i> Edit</a>
+									  <a class="dropdown-item" href="#"><i class="fa fa-trash-o"></i> Delete</a>
+									  <div class="dropdown-divider"></div>
+									  <a class="dropdown-item" href="#"><i class="fa fa-share-alt"></i> Share</a>
+									</div>
+								  </div>
+							  </div>
+						  </div>
+
+						  <!--With badge!-->
+						  <div class="col-xl-4">
+							  <div class="h-200">
+								<h5>With badge</h5>
+
+								  <div class="dropdown">
+									<button class="btn btn-rounded btn-outline btn-info dropdown-toggle" type="button" data-toggle="dropdown">Dropdown</button>
+									<div class="dropdown-menu">
+									  <a class="dropdown-item flexbox" href="#">
+										<span>Inbox</span>
+										<span class="badge badge-pill badge-info">5</span>
+									  </a>
+									  <a class="dropdown-item" href="#">Sent</a>
+									  <a class="dropdown-item" href="#">Spam</a>
+									  <div class="dropdown-divider"></div>
+									  <a class="dropdown-item flexbox" href="#">
+										<span>Draft</span>
+										<span class="badge badge-pill badge-default">1</span>
+									  </a>
+									</div>
+								  </div>
+							  </div>
+						  </div>
+
+						  <!--Disabled item!-->
+						  <div class="col-xl-4">
+							  <div class="h-200">
+								<h5>Disabled item</h5>
+								<p><code>.disabled</code> applies to <em>.dropdown-item</em></p>
+
+								  <div class="dropdown">
+									<button class="btn btn-rounded btn-outline btn-warning dropdown-toggle" type="button" data-toggle="dropdown">Dropdown</button>
+									<div class="dropdown-menu">
+									  <a class="dropdown-item" href="#">Action</a>
+									  <a class="dropdown-item disabled" href="#">Another action</a>
+									  <a class="dropdown-item" href="#">Something else here</a>
+									</div>
+								  </div>
+							  </div>
+						  </div>
+
+						  <!--Active item!-->
+						  <div class="col-xl-4">
+							  <div class="h-200">
+								<h5>Active item</h5>
+								<p><code>.active</code> applies to <em>.dropdown-item</em></p>
+
+								  <div class="dropdown">
+									<button class="btn btn-rounded btn-outline btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown</button>
+									<div class="dropdown-menu">
+									  <a class="dropdown-item" href="#">Action</a>
+									  <a class="dropdown-item active" href="#">Another action</a>
+									  <a class="dropdown-item" href="#">Something else here</a>
+									</div>
+								  </div>
+							  </div>
+						  </div>
+
+						</div>
+					  </div>
+					</div>
+
+				</div>
+			</div>
+
+
+		</section>
+		<!-- /.content -->
+	  </div>
+  </div>
+  <!-- /.content-wrapper -->
+  
+   <footer class="main-footer">
+    <div class="pull-right d-none d-sm-inline-block">
+        <ul class="nav nav-primary nav-dotted nav-dot-separated justify-content-center justify-content-md-end">
+		  <li class="nav-item">
+			<a class="nav-link" href="javascript:void(0)">FAQ</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Purchase Now</a>
+		  </li>
+		</ul>
+    </div>
+	  &copy; 2020 <a href="javascript:;">Multipurpose Themes</a>. All Rights Reserved.
+  </footer>
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar">
+	  
+	<div class="rpanel-title"><span class="pull-right btn btn-circle btn-danger"><i class="ion ion-close text-white" data-toggle="control-sidebar"></i></span> </div>  <!-- Create the tabs -->
+    <ul class="nav nav-tabs control-sidebar-tabs">
+      <li class="nav-item"><a href="#control-sidebar-home-tab" data-toggle="tab" class="active"><i class="mdi mdi-message-text"></i></a></li>
+      <li class="nav-item"><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="mdi mdi-playlist-check"></i></a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <!-- Home tab content -->
+      <div class="tab-pane active" id="control-sidebar-home-tab">
+          <div class="flexbox">
+			<a href="javascript:void(0)" class="text-grey">
+				<i class="ti-more"></i>
+			</a>	
+			<p>Users</p>
+			<a href="javascript:void(0)" class="text-right text-grey"><i class="ti-plus"></i></a>
+		  </div>
+		  <div class="lookup lookup-sm lookup-right d-none d-lg-block">
+			<input type="text" name="s" placeholder="Search" class="w-p100">
+		  </div>
+          <div class="media-list media-list-hover mt-20">
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-success" href="#">
+				<img src="../stylesheet/picture/1.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Tyler</strong></a>
+				</p>
+				<p>Praesent tristique diam...</p>
+				  <span>Just now</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-danger" href="#">
+				<img src="../stylesheet/picture/2.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Luke</strong></a>
+				</p>
+				<p>Cras tempor diam ...</p>
+				  <span>33 min ago</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-warning" href="#">
+				<img src="../stylesheet/picture/3.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Evan</strong></a>
+				</p>
+				<p>In posuere tortor vel...</p>
+				  <span>42 min ago</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-primary" href="#">
+				<img src="../stylesheet/picture/4.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Evan</strong></a>
+				</p>
+				<p>In posuere tortor vel...</p>
+				  <span>42 min ago</span>
+			  </div>
+			</div>			
+			
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-success" href="#">
+				<img src="../stylesheet/picture/1.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Tyler</strong></a>
+				</p>
+				<p>Praesent tristique diam...</p>
+				  <span>Just now</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-danger" href="#">
+				<img src="../stylesheet/picture/2.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Luke</strong></a>
+				</p>
+				<p>Cras tempor diam ...</p>
+				  <span>33 min ago</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-warning" href="#">
+				<img src="../stylesheet/picture/3.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Evan</strong></a>
+				</p>
+				<p>In posuere tortor vel...</p>
+				  <span>42 min ago</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-primary" href="#">
+				<img src="../stylesheet/picture/4.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Evan</strong></a>
+				</p>
+				<p>In posuere tortor vel...</p>
+				  <span>42 min ago</span>
+			  </div>
+			</div>
+			  
+		  </div>
+
+      </div>
+      <!-- /.tab-pane -->
+      <!-- Settings tab content -->
+      <div class="tab-pane" id="control-sidebar-settings-tab">
+          <div class="flexbox">
+			<a href="javascript:void(0)" class="text-grey">
+				<i class="ti-more"></i>
+			</a>	
+			<p>Todo List</p>
+			<a href="javascript:void(0)" class="text-right text-grey"><i class="ti-plus"></i></a>
+		  </div>
+        <ul class="todo-list mt-20">
+			<li class="py-15 px-5 by-1">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_1" class="filled-in">
+			  <label for="basic_checkbox_1" class="mb-0 h-15"></label>
+			  <!-- todo text -->
+			  <span class="text-line">Nulla vitae purus</span>
+			  <!-- Emphasis label -->
+			  <small class="badge bg-danger"><i class="fa fa-clock-o"></i> 2 mins</small>
+			  <!-- General tools such as edit or delete-->
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_2" class="filled-in">
+			  <label for="basic_checkbox_2" class="mb-0 h-15"></label>
+			  <span class="text-line">Phasellus interdum</span>
+			  <small class="badge bg-info"><i class="fa fa-clock-o"></i> 4 hours</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5 by-1">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_3" class="filled-in">
+			  <label for="basic_checkbox_3" class="mb-0 h-15"></label>
+			  <span class="text-line">Quisque sodales</span>
+			  <small class="badge bg-warning"><i class="fa fa-clock-o"></i> 1 day</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_4" class="filled-in">
+			  <label for="basic_checkbox_4" class="mb-0 h-15"></label>
+			  <span class="text-line">Proin nec mi porta</span>
+			  <small class="badge bg-success"><i class="fa fa-clock-o"></i> 3 days</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5 by-1">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_5" class="filled-in">
+			  <label for="basic_checkbox_5" class="mb-0 h-15"></label>
+			  <span class="text-line">Maecenas scelerisque</span>
+			  <small class="badge bg-primary"><i class="fa fa-clock-o"></i> 1 week</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_6" class="filled-in">
+			  <label for="basic_checkbox_6" class="mb-0 h-15"></label>
+			  <span class="text-line">Vivamus nec orci</span>
+			  <small class="badge bg-info"><i class="fa fa-clock-o"></i> 1 month</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5 by-1">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_7" class="filled-in">
+			  <label for="basic_checkbox_7" class="mb-0 h-15"></label>
+			  <!-- todo text -->
+			  <span class="text-line">Nulla vitae purus</span>
+			  <!-- Emphasis label -->
+			  <small class="badge bg-danger"><i class="fa fa-clock-o"></i> 2 mins</small>
+			  <!-- General tools such as edit or delete-->
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_8" class="filled-in">
+			  <label for="basic_checkbox_8" class="mb-0 h-15"></label>
+			  <span class="text-line">Phasellus interdum</span>
+			  <small class="badge bg-info"><i class="fa fa-clock-o"></i> 4 hours</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5 by-1">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_9" class="filled-in">
+			  <label for="basic_checkbox_9" class="mb-0 h-15"></label>
+			  <span class="text-line">Quisque sodales</span>
+			  <small class="badge bg-warning"><i class="fa fa-clock-o"></i> 1 day</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_10" class="filled-in">
+			  <label for="basic_checkbox_10" class="mb-0 h-15"></label>
+			  <span class="text-line">Proin nec mi porta</span>
+			  <small class="badge bg-success"><i class="fa fa-clock-o"></i> 3 days</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+		  </ul>
+      </div>
+      <!-- /.tab-pane -->
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+  
+  <!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+	
+	<!-- ./side demo panel -->
+	{include:"./include_setting.html"}
+	{include:"./include_sticky_toolbar_buttom.html"}
+	{include:"./include_rightmenu.html"}
+	<!-- Sidebar -->
+	
+	{include:"./include_chat.html"}
+	
+	<!-- Page Content overlay -->
+	
+	
+	<!-- Vendor JS -->
+	<script src="../stylesheet/js/vendors.min.js"></script>
+	<script src="../stylesheet/js/chat-popup.js"></script>
+    <script src="../stylesheet/js/feather.min.js"></script>	
+	
+	<!-- EduAdmin App -->
+	<script src="../stylesheet/js/template.js"></script>
+	
+	
+	
+	
+	
+	{include:"./include_public_script.html"}
+</body>
+</html>

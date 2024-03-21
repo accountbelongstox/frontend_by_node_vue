@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+{include:"./include_head.html"}
+<body class="hold-transition light-skin sidebar-mini theme-primary fixed sidebar-collapse">
+	
+<div class="wrapper">
+	
+
+  {include:"./include_header.html"}
+  
+  <!-- Left side column. contains the logo and sidebar -->
+  {include:"./include_main_sidebar.html"}
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+	  <div class="container-full">
+		<!-- Content Header (Page header) -->	  
+		<div class="content-header">
+			<div class="d-flex align-items-center">
+				<div class="mr-auto">
+					<h3 class="page-title">Lightbox Popup</h3>
+					<div class="d-inline-block align-items-center">
+						<nav>
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
+								<li class="breadcrumb-item" aria-current="page">Sample Page</li>
+								<li class="breadcrumb-item active" aria-current="page">Lightbox Popup</li>
+							</ol>
+						</nav>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<!-- Main content -->
+		<section class="content">
+
+
+		  <!-- Default box -->
+		  <div class="box">
+			<div class="box-header with-border">
+			  <h3 class="box-title">Single image lightbox</h3>
+				<h6 class="subtitle"><code>&lt;a class="image-popup-no-margins" href="..." title="title will be apear here"&gt;&lt;img src="..."/&gt;&lt;/a&gt;</code></h6>
+			</div>
+			<div class="box-body">
+			  <div class="row">
+					<div class="col-sm-4">
+						<a class="image-popup-vertical-fit" href="javascript:;" title="Caption. Can be aligned to any side and contain any HTML.">
+							<img src="http://view.jqueryfuns.com/2021/11/23/8ca44343437f42638197498348cbe901/static/picture/110.jpg" class="img-fluid" alt="">
+						</a>
+						<small>Fits horizontally and vertically</small>
+					</div>
+					<div class="col-sm-4">
+						<a class="image-popup-fit-width" href="javascript:;" title="This image fits only horizontally.">
+							<img src="http://view.jqueryfuns.com/2021/11/23/8ca44343437f42638197498348cbe901/static/picture/23.jpg" class="img-fluid" alt="">
+						</a>
+						<small>Only horizontally</small>
+					</div>
+					<div class="col-sm-4">
+						<a class="image-popup-no-margins" href="javascript:;">
+							<img src="http://view.jqueryfuns.com/2021/11/23/8ca44343437f42638197498348cbe901/static/picture/32.jpg" class="img-fluid" alt="">
+						</a>
+						<small>Zoom animation, close on top-right.</small>
+					</div>
+				</div>
+			</div>
+			<!-- /.box-body -->
+		  </div>
+		  <!-- /.box -->
+
+		  <!-- Default box -->
+		  <div class="box">
+			<div class="box-header with-border">
+			  <h4 class="box-title">Lightbox gallery</h4>
+				<h6 class="subtitle"><code>&lt;a href="..." title="title will be apear here"&gt;&lt;img src="..."/&gt;&lt;/a&gt;</code></h6>
+			</div>
+			<div class="box-body">
+			  <div class="popup-gallery">
+					<a href="javascript:;" title="Caption. Can be aligned to any side and contain any HTML.">
+						<img src="http://view.jqueryfuns.com/2021/11/23/8ca44343437f42638197498348cbe901/static/picture/42.jpg" width="32.5%" alt="">
+					</a>
+					<a href="javascript:;" title="This image fits only horizontally.">
+						<img src="http://view.jqueryfuns.com/2021/11/23/8ca44343437f42638197498348cbe901/static/picture/51.jpg" width="32.5%" alt="">
+					</a>
+					<a href="javascript:;">
+						<img src="http://view.jqueryfuns.com/2021/11/23/8ca44343437f42638197498348cbe901/static/picture/61.jpg" width="32.5%" alt="">
+					</a>
+				</div> <small>just add code under class="popup-gallery".</small>
+			</div>
+			<!-- /.box-body -->
+		  </div>
+		  <!-- /.box -->
+
+		  <!-- Default box -->
+		  <div class="box">
+			<div class="box-header with-border">
+			  <h4 class="box-title">Zoom-gallery</h4>
+			</div>
+			<div class="box-body">
+				<div class="zoom-gallery m-t-30">
+					<a href="javascript:;" title="Caption. Can be aligned to any side and contain any HTML.">
+						<img src="http://view.jqueryfuns.com/2021/11/23/8ca44343437f42638197498348cbe901/static/picture/71.jpg" width="32.5%" alt="">
+					</a>
+					<a href="javascript:;" title="This image fits only horizontally.">
+						<img src="http://view.jqueryfuns.com/2021/11/23/8ca44343437f42638197498348cbe901/static/picture/82.jpg" width="32.5%" alt="">
+					</a>
+					<a href="javascript:;">
+						<img src="http://view.jqueryfuns.com/2021/11/23/8ca44343437f42638197498348cbe901/static/picture/92.jpg" width="32.5%" alt="">
+					</a>
+				</div>
+			</div>
+			<!-- /.box-body -->
+		  </div>
+		  <!-- /.box -->
+
+		  <!-- Default box -->
+		  <div class="box">
+			<div class="box-header with-border">
+			  <h4 class="box-title">Css Animation</h4>
+			</div>
+			<div class="box-body">
+				<div id="image-popups" class="row">
+					<div class="col-sm-2">
+						<a href="javascript:;" data-effect="mfp-zoom-in"><img src="http://view.jqueryfuns.com/2021/11/23/8ca44343437f42638197498348cbe901/static/picture/10.jpg" class="img-fluid" alt="">
+							<br>Zoom</a>
+					</div>
+					<div class="col-sm-2">
+						<a href="javascript:;" data-effect="mfp-newspaper"><img src="http://view.jqueryfuns.com/2021/11/23/8ca44343437f42638197498348cbe901/static/picture/11.jpg" class="img-fluid" alt="">
+							<br>Newspaper</a>
+					</div>
+					<div class="col-sm-2">
+						<a href="javascript:;" data-effect="mfp-move-horizontal"><img src="http://view.jqueryfuns.com/2021/11/23/8ca44343437f42638197498348cbe901/static/picture/12.jpg" class="img-fluid" alt="">
+							<br>Horizontal move</a>
+					</div>
+					<div class="col-sm-2">
+						<a href="javascript:;" data-effect="mfp-move-from-top"><img src="http://view.jqueryfuns.com/2021/11/23/8ca44343437f42638197498348cbe901/static/picture/13.jpg" class="img-fluid" alt="">
+							<br>Move from top</a>
+					</div>
+					<div class="col-sm-2">
+						<a href="javascript:;" data-effect="mfp-3d-unfold"><img src="http://view.jqueryfuns.com/2021/11/23/8ca44343437f42638197498348cbe901/static/picture/14.jpg" class="img-fluid" alt="">
+							<br>3d unfold</a>
+					</div>
+					<div class="col-sm-2">
+						<a href="javascript:;" data-effect="mfp-zoom-out"><img src="http://view.jqueryfuns.com/2021/11/23/8ca44343437f42638197498348cbe901/static/picture/15.jpg" class="img-fluid" alt="">
+							<br>Zoom-out</a>
+					</div>
+				</div>
+			</div>
+			<!-- /.box-body -->
+		  </div>
+		  <!-- /.box -->
+
+		  <div class="row">
+			 <div class="col-lg-6 col-12"> 
+			  <!-- Default box -->
+			  <div class="box">
+				<div class="box-header with-border">
+				  <h4 class="box-title">Popup with Youtube Video</h4>
+					<h6 class="subtitle">You can use youtube video with popup just add class <code>popup-youtube</code></h6>
+				</div>
+				<div class="box-body">
+					<a class="popup-youtube btn btn-danger" href="javascript:;">Open YouTube video</a>
+				</div>
+				<!-- /.box-body -->
+			  </div>
+			  <!-- /.box -->
+			 </div>
+			 <div class="col-lg-6 col-12">
+				  <!-- Default box -->
+				  <div class="box">
+					<div class="box-header with-border">
+					  <h4 class="box-title">Google map</h4>
+						<h6 class="subtitle">You can use Googlemap with popup just add class with <code>popup-gmaps</code></h6>
+					</div>
+					<div class="box-body">
+						<a class="popup-gmaps btn btn-info" href="javascript:;">Open Google Map</a>
+					</div>
+					<!-- /.box-body -->
+				  </div>
+				  <!-- /.box --> 
+			  </div>
+		  </div>
+
+		  <!-- Default box -->
+		  <div class="box">
+			<div class="box-header with-border">
+			  <h4 class="box-title">Form Popup</h4>
+			</div>
+			<div class="box-body">
+				<a class="popup-with-form btn btn-success" href="#test-form">Open form</a>
+
+				<!-- form itself -->
+				<form id="test-form" class="mfp-hide white-popup-block">
+					<h1>Form</h1>
+					<fieldset style="border:0;">
+						<p>Lightbox has an option to automatically focus on the first input. It's strongly recommended to use <code>inline</code> popup type for lightboxes with form instead of <code>ajax</code> (to keep entered data if the user accidentally refreshed the page).</p>
+						<div class="form-group">
+							<label class="control-label" for="inputName">Name</label>
+							<input type="text" class="form-control" id="inputName" name="name" placeholder="Name" required="">
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="inputEmail">Email</label>
+							<input type="email" class="form-control" id="inputEmail" name="email" placeholder="example@domain.com" required="">
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="inputPhone">Phone</label>
+							<input type="tel" class="form-control" id="inputPhone" name="phone" placeholder="Eg. +447500000000" required="">
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="textarea">Textarea</label>
+							<br>
+							<textarea class="form-control" id="textarea">Try to resize me to see how popup CSS-based resizing works.</textarea>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+			<!-- /.box-body -->
+		  </div>
+		  <!-- /.box -->
+
+		</section>
+		<!-- /.content -->	  
+	  </div>
+  </div>
+  <!-- /.content-wrapper -->
+ 
+   <footer class="main-footer">
+    <div class="pull-right d-none d-sm-inline-block">
+        <ul class="nav nav-primary nav-dotted nav-dot-separated justify-content-center justify-content-md-end">
+		  <li class="nav-item">
+			<a class="nav-link" href="javascript:void(0)">FAQ</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Purchase Now</a>
+		  </li>
+		</ul>
+    </div>
+	  &copy; 2020 <a href="javascript:;">Multipurpose Themes</a>. All Rights Reserved.
+  </footer>
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar">
+	  
+	<div class="rpanel-title"><span class="pull-right btn btn-circle btn-danger"><i class="ion ion-close text-white" data-toggle="control-sidebar"></i></span> </div>  <!-- Create the tabs -->
+    <ul class="nav nav-tabs control-sidebar-tabs">
+      <li class="nav-item"><a href="#control-sidebar-home-tab" data-toggle="tab" class="active"><i class="mdi mdi-message-text"></i></a></li>
+      <li class="nav-item"><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="mdi mdi-playlist-check"></i></a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <!-- Home tab content -->
+      <div class="tab-pane active" id="control-sidebar-home-tab">
+          <div class="flexbox">
+			<a href="javascript:void(0)" class="text-grey">
+				<i class="ti-more"></i>
+			</a>	
+			<p>Users</p>
+			<a href="javascript:void(0)" class="text-right text-grey"><i class="ti-plus"></i></a>
+		  </div>
+		  <div class="lookup lookup-sm lookup-right d-none d-lg-block">
+			<input type="text" name="s" placeholder="Search" class="w-p100">
+		  </div>
+          <div class="media-list media-list-hover mt-20">
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-success" href="#">
+				<img src="../stylesheet/picture/1.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Tyler</strong></a>
+				</p>
+				<p>Praesent tristique diam...</p>
+				  <span>Just now</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-danger" href="#">
+				<img src="../stylesheet/picture/2.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Luke</strong></a>
+				</p>
+				<p>Cras tempor diam ...</p>
+				  <span>33 min ago</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-warning" href="#">
+				<img src="../stylesheet/picture/3.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Evan</strong></a>
+				</p>
+				<p>In posuere tortor vel...</p>
+				  <span>42 min ago</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-primary" href="#">
+				<img src="../stylesheet/picture/4.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Evan</strong></a>
+				</p>
+				<p>In posuere tortor vel...</p>
+				  <span>42 min ago</span>
+			  </div>
+			</div>			
+			
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-success" href="#">
+				<img src="../stylesheet/picture/1.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Tyler</strong></a>
+				</p>
+				<p>Praesent tristique diam...</p>
+				  <span>Just now</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-danger" href="#">
+				<img src="../stylesheet/picture/2.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Luke</strong></a>
+				</p>
+				<p>Cras tempor diam ...</p>
+				  <span>33 min ago</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-warning" href="#">
+				<img src="../stylesheet/picture/3.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Evan</strong></a>
+				</p>
+				<p>In posuere tortor vel...</p>
+				  <span>42 min ago</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-primary" href="#">
+				<img src="../stylesheet/picture/4.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Evan</strong></a>
+				</p>
+				<p>In posuere tortor vel...</p>
+				  <span>42 min ago</span>
+			  </div>
+			</div>
+			  
+		  </div>
+
+      </div>
+      <!-- /.tab-pane -->
+      <!-- Settings tab content -->
+      <div class="tab-pane" id="control-sidebar-settings-tab">
+          <div class="flexbox">
+			<a href="javascript:void(0)" class="text-grey">
+				<i class="ti-more"></i>
+			</a>	
+			<p>Todo List</p>
+			<a href="javascript:void(0)" class="text-right text-grey"><i class="ti-plus"></i></a>
+		  </div>
+        <ul class="todo-list mt-20">
+			<li class="py-15 px-5 by-1">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_1" class="filled-in">
+			  <label for="basic_checkbox_1" class="mb-0 h-15"></label>
+			  <!-- todo text -->
+			  <span class="text-line">Nulla vitae purus</span>
+			  <!-- Emphasis label -->
+			  <small class="badge bg-danger"><i class="fa fa-clock-o"></i> 2 mins</small>
+			  <!-- General tools such as edit or delete-->
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_2" class="filled-in">
+			  <label for="basic_checkbox_2" class="mb-0 h-15"></label>
+			  <span class="text-line">Phasellus interdum</span>
+			  <small class="badge bg-info"><i class="fa fa-clock-o"></i> 4 hours</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5 by-1">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_3" class="filled-in">
+			  <label for="basic_checkbox_3" class="mb-0 h-15"></label>
+			  <span class="text-line">Quisque sodales</span>
+			  <small class="badge bg-warning"><i class="fa fa-clock-o"></i> 1 day</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_4" class="filled-in">
+			  <label for="basic_checkbox_4" class="mb-0 h-15"></label>
+			  <span class="text-line">Proin nec mi porta</span>
+			  <small class="badge bg-success"><i class="fa fa-clock-o"></i> 3 days</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5 by-1">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_5" class="filled-in">
+			  <label for="basic_checkbox_5" class="mb-0 h-15"></label>
+			  <span class="text-line">Maecenas scelerisque</span>
+			  <small class="badge bg-primary"><i class="fa fa-clock-o"></i> 1 week</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_6" class="filled-in">
+			  <label for="basic_checkbox_6" class="mb-0 h-15"></label>
+			  <span class="text-line">Vivamus nec orci</span>
+			  <small class="badge bg-info"><i class="fa fa-clock-o"></i> 1 month</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5 by-1">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_7" class="filled-in">
+			  <label for="basic_checkbox_7" class="mb-0 h-15"></label>
+			  <!-- todo text -->
+			  <span class="text-line">Nulla vitae purus</span>
+			  <!-- Emphasis label -->
+			  <small class="badge bg-danger"><i class="fa fa-clock-o"></i> 2 mins</small>
+			  <!-- General tools such as edit or delete-->
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_8" class="filled-in">
+			  <label for="basic_checkbox_8" class="mb-0 h-15"></label>
+			  <span class="text-line">Phasellus interdum</span>
+			  <small class="badge bg-info"><i class="fa fa-clock-o"></i> 4 hours</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5 by-1">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_9" class="filled-in">
+			  <label for="basic_checkbox_9" class="mb-0 h-15"></label>
+			  <span class="text-line">Quisque sodales</span>
+			  <small class="badge bg-warning"><i class="fa fa-clock-o"></i> 1 day</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_10" class="filled-in">
+			  <label for="basic_checkbox_10" class="mb-0 h-15"></label>
+			  <span class="text-line">Proin nec mi porta</span>
+			  <small class="badge bg-success"><i class="fa fa-clock-o"></i> 3 days</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+		  </ul>
+      </div>
+      <!-- /.tab-pane -->
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+  
+  <!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+	
+	<!-- ./side demo panel -->
+	{include:"./include_setting.html"}
+	{include:"./include_sticky_toolbar_buttom.html"}
+	{include:"./include_rightmenu.html"}
+	<!-- Sidebar -->
+	
+	{include:"./include_chat.html"}
+	
+	<!-- Page Content overlay -->
+	
+	
+	<!-- Vendor JS -->
+	<script src="../stylesheet/js/vendors.min.js"></script>
+	<script src="../stylesheet/js/chat-popup.js"></script>
+    <script src="../stylesheet/js/feather.min.js"></script>	<script src="../stylesheet/js/jquery.magnific-popup.min.js"></script>
+    <script src="../stylesheet/js/jquery.magnific-popup-init.js"></script>
+	
+	<!-- EduAdmin App -->
+	<script src="../stylesheet/js/template.js"></script>
+	
+	
+
+	{include:"./include_public_script.html"}
+</body>
+</html>

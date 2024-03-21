@@ -1,0 +1,230 @@
+<style>
+    @keyframes swing {
+        0% {
+            transform: rotate(3deg);
+        }
+
+        40% {
+            transform: rotate(-3deg);
+        }
+
+        80% {
+            transform: rotate(3deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    #customContextMenu {
+        /* 圆角和阴影效果 */
+        border-radius: 10px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+        /* 动画效果 */
+        animation: swing 1s ease-in-out;
+        padding: 10px;
+    }
+
+    #customContextMenu li {
+        margin-left: -40px;
+        cursor: pointer;
+        list-style-type: none;
+        /* padding-left: -10px; */
+    }
+
+    #customContextMenu a {
+        display: block;
+        padding: 5px 10px;
+        color: #000;
+        margin-bottom: 5px;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+
+    #customContextMenu a:hover {
+        background-color: #fff;
+        color: green;
+    }
+</style>
+<div id="customContextMenu"
+    style="display: none; position: absolute; list-style-type: none; background-color: #f5f5f5; border: 1px solid #ccc;">
+    <!-- 这是您的自定义右键菜单 -->
+
+    <div class="navbar-custom-menu">
+        <ul class="menu sm-scrol" style="overflow: hidden; width: auto;height: auto; ">
+            <li>
+                <a href="javascript:void(0)" onclick="run_as_admin(this)">
+                    <img class="customContextMenuImg" src="" style="width: 30px;height: 30px;margin-left: -5px;" />run
+                    as administrator
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="opensoftwaer_loacation(this)">
+                    <i class="fa fa-folder-open"></i>
+                    open software location
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="openicondir(this)">
+                    <i class="fa  fa-file-o text-info"></i>
+                    icon position
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <i class="fa fa-windows text-success"></i>
+                    re-install by winget
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <i class="fa  fa-cloud-download text-danger"></i>
+                    update software
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)">
+                    <i class="fa fa-download text-danger"></i> backup
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<script>
+    function opensoftwaer_loacation(self) {
+        const aid = self.getAttribute('data-aid');
+        let target = document.querySelector(`#${aid}`)
+        const exists = target.getAttribute('data-exists');
+        if (!exists || exists == 'false') {
+            alertify
+                .errorAlert(`does not exist`, function () {
+                    alertify.message('OK');
+                });
+            return
+        }
+        window.electron.register(target, 'opendir')
+    }
+
+    function openicondir(self) {
+        if (!self || !self.getAttribute('data-aid')) {
+            window.electron.register(null, 'openicondir')
+            return
+        }
+        const aid = self.getAttribute('data-aid');
+        let element = document.querySelector(`#${aid}`)
+        while (element && !element.classList.contains('box')) {
+            element = element.parentElement;
+        }
+        if (element) {
+            const boxTitleElement = element.querySelector('.box-title');
+            if (boxTitleElement) {
+                window.electron.register(boxTitleElement.textContent, 'openicondir')
+            }
+        }
+    }
+
+    function run_as_admin(self) {
+        const aid = self.getAttribute('data-aid');
+        let target = document.querySelector(`#${aid}`)
+        const exists = target.getAttribute('data-exists');
+        if (!exists || exists == 'false') {
+
+            alertify
+                .errorAlert(`Has not been installed`, function () {
+                    alertify.message('OK');
+                });
+            return
+        }
+        window.electron.register(target, 'runasadmin')
+    }
+
+    function rightMouseMenu(event, aid) {
+        // 阻止默认的右键菜单
+        event.preventDefault();
+        // 获取自定义的右键菜单元素
+        const mouseX = event.pageX;
+        const mouseY = event.pageY;
+        const contextMenu = document.getElementById('customContextMenu');
+        if (aid) {
+            //图标上菜单
+            let target = document.querySelector(`#${aid}`)
+            const execValue = target.getAttribute('data-exec');
+            const imgId = target.getAttribute('data-imgid');
+            const exists = target.getAttribute('data-exists');
+            document.querySelectorAll(`#customContextMenu .navbar-custom-menu li a`).forEach((li, index) => {
+                li.style.display = 'block';
+                if (!exists || exists == 'false') {
+                    if (index == 0) {
+
+                        li.style.color = '#ccc';
+                    }
+                    if (index == 1) {
+                        li.style.color = '#ccc';
+                    }
+                    document.querySelectorAll(`.customContextMenuImg`).forEach(img => {
+                        img.style.filter = `grayscale(100%)`;
+                        img.style.opacity = `0.5`;
+                    })
+                } else {
+                    if (index == 0) {
+                        li.style.color = '#000';
+                    }
+                    if (index == 1) {
+                        li.style.color = '#000';
+                    }
+                    document.querySelectorAll(`.customContextMenuImg`).forEach(img => {
+                        img.style.filter = `none`;
+                        img.style.opacity = `1`;
+                    })
+                }
+
+            })
+
+            document.querySelectorAll(`#customContextMenu a`).forEach((a, index) => {
+                a.setAttribute('data-aid', aid);
+            })
+
+            const imgElement = document.getElementById(imgId);
+            if (imgElement) {
+                const imgSrc = imgElement.src;
+                document.querySelectorAll(`.customContextMenuImg`).forEach(img => {
+                    img.setAttribute('src', imgSrc);
+                })
+
+                contextMenu.style.backgroundImage = `url(${imgSrc})`;
+                contextMenu.style.backgroundSize = '50%'; // 拉伸到100%
+                contextMenu.style.backgroundRepeat = 'no-repeat'; // 不重复
+                contextMenu.style.backgroundColor = 'rgba(255, 255, 255, 0.7)'; // 5
+                contextMenu.style.backgroundPosition = '130px 180px, calc(100% - 50px) 50px';
+
+            }
+        }
+        contextMenu.style.left = mouseX + 'px';
+        contextMenu.style.top = mouseY + 'px';
+        contextMenu.style.display = 'block';
+    }
+
+    alertify.defaults.glossary.title = '';
+    alertify.defaults.transition = "zoom";
+    // alertify.defaults.glossary.ok = 'موافق';
+    // alertify.defaults.glossary.cancel = 'إلغاء';
+    if (!alertify.errorAlert) {
+        //define a new errorAlert base on alert
+        alertify.dialog('errorAlert', function factory() {
+            return {
+                build: function () {
+                    var errorHeader = '<span class="fa fa-times-circle fa-2x" '
+                        + 'style="vertical-align:middle;color:#e10000;">'
+                        + '</span> App Error';
+                    this.setHeader(errorHeader);
+                }
+            };
+        }, true, 'alert');
+    }
+    document.addEventListener('click', function (event) {
+        const contextMenu = document.getElementById('customContextMenu');
+        contextMenu.style.display = 'none';
+    });
+</script>

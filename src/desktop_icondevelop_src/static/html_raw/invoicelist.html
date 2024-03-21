@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+{include:"./include_head.html"}
+<body class="hold-transition light-skin sidebar-mini theme-primary fixed sidebar-collapse">
+	
+<div class="wrapper">
+	
+
+  {include:"./include_header.html"}
+  
+  <!-- Left side column. contains the logo and sidebar -->
+  {include:"./include_main_sidebar.html"}
+  
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+	  <div class="container-full">
+		<!-- Content Header (Page header) -->	  
+		<div class="content-header">
+			<div class="d-flex align-items-center">
+				<div class="mr-auto">
+					<h3 class="page-title">Invoice List</h3>
+					<div class="d-inline-block align-items-center">
+						<nav>
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a></li>
+								<li class="breadcrumb-item" aria-current="page">Invoice</li>
+								<li class="breadcrumb-item active" aria-current="page">Invoice List</li>
+							</ol>
+						</nav>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<!-- Main content -->
+		<section class="content">
+		  <div class="row">
+			<div class="col-xl-10 col-lg-9 col-12">
+				<div class="box">
+					<div class="box-header with-border">						
+						<h4 class="box-title">Invoice List</h4>
+						<h6 class="box-subtitle">Export Invoice List to Copy, CSV, Excel, PDF & Print</h6>
+					</div>
+					<div class="box-body">						
+						<div class="table-responsive">
+
+							<table id="example" class="table table-lg invoice-archive">
+								<thead>
+									<tr>
+										<th>#</th>
+										<th>Period</th>
+										<th>Issued to</th>
+										<th>Status</th>
+										<th>Issue date</th>
+										<th>Due date</th>
+										<th>Amount</th>
+										<th class="text-center">Actions</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>#0025</td>
+										<td>February 2018</td>
+										<td>
+											<h6 class="mb-0">
+												<a href="#">Jacob</a>
+												<span class="d-block text-muted">Payment method: Skrill</span>
+											</h6>
+										</td>
+										<td>
+											<select name="status" class="form-control" data-placeholder="Select status">
+												<option value="overdue">Overdue</option>
+												<option value="hold" selected="">On hold</option>
+												<option value="pending">Pending</option>
+												<option value="paid">Paid</option>
+												<option value="invalid">Invalid</option>
+												<option value="cancel">Canceled</option>
+											</select>
+										</td>
+										<td>
+											April 18, 2018
+										</td>
+										<td>
+											<span class="badge badge-pill badge-success">Paid on Mar 16, 2018</span>
+										</td>
+										<td>
+											<h6 class="mb-0 font-weight-bold">$36,890 <span class="d-block text-muted font-weight-normal">VAT $4,859</span></h6>
+										</td>
+										<td class="text-center">
+											<div class="list-icons d-inline-flex">
+												<a href="#" class="list-icons-item mr-10"><i class="fa fa-eye-slash"></i></a>
+												<div class="list-icons-item dropdown">
+													<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-text"></i></a>
+													<div class="dropdown-menu dropdown-menu-right">
+														<a href="#" class="dropdown-item"><i class="fa fa-download"></i> Download</a>
+														<a href="#" class="dropdown-item"><i class="fa fa-print"></i> Print</a>
+														<div class="dropdown-divider"></div>
+														<a href="#" class="dropdown-item"><i class="fa fa-pencil"></i> Edit</a>
+														<a href="#" class="dropdown-item"><i class="fa fa-remove"></i> Remove</a>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td>#0024</td>
+										<td>February 2018</td>
+										<td>
+											<h6 class="mb-0">
+												<a href="#">Mason</a>
+												<span class="d-block text-muted">Payment method: Wire transfer</span>
+											</h6>
+										</td>
+										<td>
+											<select name="status" class="form-control" data-placeholder="Select status">
+												<option value="overdue">Overdue</option>
+												<option value="hold">On hold</option>
+												<option value="pending">Pending</option>
+												<option value="paid" selected="">Paid</option>
+												<option value="invalid">Invalid</option>
+												<option value="cancel">Canceled</option>
+											</select>
+										</td>
+										<td>
+											April 17, 2018
+										</td>
+										<td>
+											<span class="badge badge-pill badge-warning">5 days</span>
+										</td>
+										<td>
+											<h6 class="mb-0 font-weight-bold">$8,854 <span class="d-block text-muted font-weight-normal">VAT $4,785</span></h6>
+										</td>
+										<td class="text-center">
+											<div class="list-icons d-inline-flex">
+												<a href="#" class="list-icons-item mr-10"><i class="fa fa-eye-slash"></i></a>
+												<div class="list-icons-item dropdown">
+													<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-text"></i></a>
+													<div class="dropdown-menu dropdown-menu-right">
+														<a href="#" class="dropdown-item"><i class="fa fa-download"></i> Download</a>
+														<a href="#" class="dropdown-item"><i class="fa fa-print"></i> Print</a>
+														<div class="dropdown-divider"></div>
+														<a href="#" class="dropdown-item"><i class="fa fa-pencil"></i> Edit</a>
+														<a href="#" class="dropdown-item"><i class="fa fa-remove"></i> Remove</a>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td>#0023</td>
+										<td>February 2018</td>
+										<td>
+											<h6 class="mb-0">
+												<a href="#">William</a>
+												<span class="d-block text-muted">Payment method: Payoneer</span>
+											</h6>
+										</td>
+										<td>
+											<select name="status" class="form-control" data-placeholder="Select status">
+												<option value="overdue">Overdue</option>
+												<option value="hold">On hold</option>
+												<option value="pending">Pending</option>
+												<option value="paid" selected="">Paid</option>
+												<option value="invalid">Invalid</option>
+												<option value="cancel">Canceled</option>
+											</select>
+										</td>
+										<td>
+											April 17, 2018
+										</td>
+										<td>
+											<span class="badge badge-pill badge-primary">27 days</span>
+										</td>
+										<td>
+											<h6 class="mb-0 font-weight-bold">$12,854 <span class="d-block text-muted font-weight-normal">VAT $7,845</span></h6>
+										</td>
+										<td class="text-center">
+											<div class="list-icons d-inline-flex">
+												<a href="#" class="list-icons-item mr-10"><i class="fa fa-eye-slash"></i></a>
+												<div class="list-icons-item dropdown">
+													<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-text"></i></a>
+													<div class="dropdown-menu dropdown-menu-right">
+														<a href="#" class="dropdown-item"><i class="fa fa-download"></i> Download</a>
+														<a href="#" class="dropdown-item"><i class="fa fa-print"></i> Print</a>
+														<div class="dropdown-divider"></div>
+														<a href="#" class="dropdown-item"><i class="fa fa-pencil"></i> Edit</a>
+														<a href="#" class="dropdown-item"><i class="fa fa-remove"></i> Remove</a>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td>#0022</td>
+										<td>January 2018</td>
+										<td>
+											<h6 class="mb-0">
+												<a href="#">Jayden</a>
+												<span class="d-block text-muted">Payment method: Paypal</span>
+											</h6>
+										</td>
+										<td>
+											<select name="status" class="form-control" data-placeholder="Select status">
+												<option value="overdue">Overdue</option>
+												<option value="hold">On hold</option>
+												<option value="pending">Pending</option>
+												<option value="paid">Paid</option>
+												<option value="invalid">Invalid</option>
+												<option value="cancel" selected="">Canceled</option>
+											</select>
+										</td>
+										<td>
+											January 15, 2018
+										</td>
+										<td>
+											<span class="badge badge-pill badge-primary">12 days</span>
+										</td>
+										<td>
+											<h6 class="mb-0 font-weight-bold">$458 <span class="d-block text-muted font-weight-normal">VAT $985</span></h6>
+										</td>
+										<td class="text-center">
+											<div class="list-icons d-inline-flex">
+												<a href="#" class="list-icons-item mr-10"><i class="fa fa-eye-slash"></i></a>
+												<div class="list-icons-item dropdown">
+													<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-text"></i></a>
+													<div class="dropdown-menu dropdown-menu-right">
+														<a href="#" class="dropdown-item"><i class="fa fa-download"></i> Download</a>
+														<a href="#" class="dropdown-item"><i class="fa fa-print"></i> Print</a>
+														<div class="dropdown-divider"></div>
+														<a href="#" class="dropdown-item"><i class="fa fa-pencil"></i> Edit</a>
+														<a href="#" class="dropdown-item"><i class="fa fa-remove"></i> Remove</a>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td>#0021</td>
+										<td>January 2018</td>
+										<td>
+											<h6 class="mb-0">
+												<a href="#">Noah</a>
+												<span class="d-block text-muted">Payment method: Paypal</span>
+											</h6>
+										</td>
+										<td>
+											<select name="status" class="form-control" data-placeholder="Select status">
+												<option value="overdue" selected="">Overdue</option>
+												<option value="hold">On hold</option>
+												<option value="pending">Pending</option>
+												<option value="paid">Paid</option>
+												<option value="invalid">Invalid</option>
+												<option value="cancel">Canceled</option>
+											</select>
+										</td>
+										<td>
+											January 10, 2018
+										</td>
+										<td>
+											<span class="badge badge-pill badge-danger">- 3 days</span>
+										</td>
+										<td>
+											<h6 class="mb-0 font-weight-bold">$845 <span class="d-block text-muted font-weight-normal">VAT $98</span></h6>
+										</td>
+										<td class="text-center">
+											<div class="list-icons d-inline-flex">
+												<a href="#" class="list-icons-item mr-10"><i class="fa fa-eye-slash"></i></a>
+												<div class="list-icons-item dropdown">
+													<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-text"></i></a>
+													<div class="dropdown-menu dropdown-menu-right">
+														<a href="#" class="dropdown-item"><i class="fa fa-download"></i> Download</a>
+														<a href="#" class="dropdown-item"><i class="fa fa-print"></i> Print</a>
+														<div class="dropdown-divider"></div>
+														<a href="#" class="dropdown-item"><i class="fa fa-pencil"></i> Edit</a>
+														<a href="#" class="dropdown-item"><i class="fa fa-remove"></i> Remove</a>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td>#0020</td>
+										<td>January 2018</td>
+										<td>
+											<h6 class="mb-0">
+												<a href="#">Ethan</a>
+												<span class="d-block text-muted">Payment method: Wire transfer</span>
+											</h6>
+										</td>
+										<td>
+											<select name="status" class="form-control" data-placeholder="Select status">
+												<option value="overdue">Overdue</option>
+												<option value="hold">On hold</option>
+												<option value="pending">Pending</option>
+												<option value="paid">Paid</option>
+												<option value="invalid" selected="">Invalid</option>
+												<option value="cancel">Canceled</option>
+											</select>
+										</td>
+										<td>
+											January 10, 2018
+										</td>
+										<td>
+											<span class="badge badge-pill badge-secondary">On hold</span>
+										</td>
+										<td>
+											<h6 class="mb-0 font-weight-bold">$985 <span class="d-block text-muted font-weight-normal">VAT $548</span></h6>
+										</td>
+										<td class="text-center">
+											<div class="list-icons d-inline-flex">
+												<a href="#" class="list-icons-item mr-10"><i class="fa fa-eye-slash"></i></a>
+												<div class="list-icons-item dropdown">
+													<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-text"></i></a>
+													<div class="dropdown-menu dropdown-menu-right">
+														<a href="#" class="dropdown-item"><i class="fa fa-download"></i> Download</a>
+														<a href="#" class="dropdown-item"><i class="fa fa-print"></i> Print</a>
+														<div class="dropdown-divider"></div>
+														<a href="#" class="dropdown-item"><i class="fa fa-pencil"></i> Edit</a>
+														<a href="#" class="dropdown-item"><i class="fa fa-remove"></i> Remove</a>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td>#0019</td>
+										<td>January 2018</td>
+										<td>
+											<h6 class="mb-0">
+												<a href="#">Alexander</a>
+												<span class="d-block text-muted">Payment method: Paypal</span>
+											</h6>
+										</td>
+										<td>
+											<select name="status" class="form-control" data-placeholder="Select status">
+												<option value="overdue">Overdue</option>
+												<option value="hold" selected="">On hold</option>
+												<option value="pending">Pending</option>
+												<option value="paid">Paid</option>
+												<option value="invalid">Invalid</option>
+												<option value="cancel">Canceled</option>
+											</select>
+										</td>
+										<td>
+											December 26, 2017
+										</td>
+										<td>
+											<span class="badge badge-pill badge-success">Paid on Feb 25, 2018</span>
+										</td>
+										<td>
+											<h6 class="mb-0 font-weight-bold">$958 <span class="d-block text-muted font-weight-normal">VAT $652</span></h6>
+										</td>
+										<td class="text-center">
+											<div class="list-icons d-inline-flex">
+												<a href="#" class="list-icons-item mr-10"><i class="fa fa-eye-slash"></i></a>
+												<div class="list-icons-item dropdown">
+													<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-text"></i></a>
+													<div class="dropdown-menu dropdown-menu-right">
+														<a href="#" class="dropdown-item"><i class="fa fa-download"></i> Download</a>
+														<a href="#" class="dropdown-item"><i class="fa fa-print"></i> Print</a>
+														<div class="dropdown-divider"></div>
+														<a href="#" class="dropdown-item"><i class="fa fa-pencil"></i> Edit</a>
+														<a href="#" class="dropdown-item"><i class="fa fa-remove"></i> Remove</a>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td>#0018</td>
+										<td>January 2018</td>
+										<td>
+											<h6 class="mb-0">
+												<a href="#">Aiden</a>
+												<span class="d-block text-muted">Payment method: Skrill</span>
+											</h6>
+										</td>
+										<td>
+											<select name="status" class="form-control" data-placeholder="Select status">
+												<option value="overdue">Overdue</option>
+												<option value="hold">On hold</option>
+												<option value="pending" selected="">Pending</option>
+												<option value="paid">Paid</option>
+												<option value="invalid">Invalid</option>
+												<option value="cancel">Canceled</option>
+											</select>
+										</td>
+										<td>
+											June 17, 2018
+										</td>
+										<td>
+											<span class="badge badge-pill badge-secondary">On hold</span>
+										</td>
+										<td>
+											<h6 class="mb-0 font-weight-bold">$358 <span class="d-block text-muted font-weight-normal">VAT $652</span></h6>
+										</td>
+										<td class="text-center">
+											<div class="list-icons d-inline-flex">
+												<a href="#" class="list-icons-item mr-10"><i class="fa fa-eye-slash"></i></a>
+												<div class="list-icons-item dropdown">
+													<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-text"></i></a>
+													<div class="dropdown-menu dropdown-menu-right">
+														<a href="#" class="dropdown-item"><i class="fa fa-download"></i> Download</a>
+														<a href="#" class="dropdown-item"><i class="fa fa-print"></i> Print</a>
+														<div class="dropdown-divider"></div>
+														<a href="#" class="dropdown-item"><i class="fa fa-pencil"></i> Edit</a>
+														<a href="#" class="dropdown-item"><i class="fa fa-remove"></i> Remove</a>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td>#0017</td>
+										<td>December 2017</td>
+										<td>
+											<h6 class="mb-0">
+												<a href="#">Daniel</a>
+												<span class="d-block text-muted">Payment method: Wire transfer</span>
+											</h6>
+										</td>
+										<td>
+											<select name="status" class="form-control" data-placeholder="Select status">
+												<option value="overdue">Overdue</option>
+												<option value="hold">On hold</option>
+												<option value="pending" selected="">Pending</option>
+												<option value="paid">Paid</option>
+												<option value="invalid">Invalid</option>
+												<option value="cancel">Canceled</option>
+											</select>
+										</td>
+										<td>
+											May 6, 2018
+										</td>
+										<td>
+											<span class="badge badge-pill badge-warning">2 days</span>
+										</td>
+										<td>
+											<h6 class="mb-0 font-weight-bold">$687 <span class="d-block text-muted font-weight-normal">VAT $845</span></h6>
+										</td>
+										<td class="text-center">
+											<div class="list-icons d-inline-flex">
+												<a href="#" class="list-icons-item mr-10"><i class="fa fa-eye-slash"></i></a>
+												<div class="list-icons-item dropdown">
+													<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-text"></i></a>
+													<div class="dropdown-menu dropdown-menu-right">
+														<a href="#" class="dropdown-item"><i class="fa fa-download"></i> Download</a>
+														<a href="#" class="dropdown-item"><i class="fa fa-print"></i> Print</a>
+														<div class="dropdown-divider"></div>
+														<a href="#" class="dropdown-item"><i class="fa fa-pencil"></i> Edit</a>
+														<a href="#" class="dropdown-item"><i class="fa fa-remove"></i> Remove</a>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td>#0016</td>
+										<td>December 2017</td>
+										<td>
+											<h6 class="mb-0">
+												<a href="#">Anthony</a>
+												<span class="d-block text-muted">Payment method: Paypal</span>
+											</h6>
+										</td>
+										<td>
+											<select name="status" class="form-control" data-placeholder="Select status">
+												<option value="overdue" selected="">Overdue</option>
+												<option value="hold">On hold</option>
+												<option value="pending">Pending</option>
+												<option value="paid">Paid</option>
+												<option value="invalid">Invalid</option>
+												<option value="cancel">Canceled</option>
+											</select>
+										</td>
+										<td>
+											March 7, 2018
+										</td>
+										<td>
+											<span class="badge badge-pill badge-primary">15 days</span>
+										</td>
+										<td>
+											<h6 class="mb-0 font-weight-bold">$985 <span class="d-block text-muted font-weight-normal">VAT $365</span></h6>
+										</td>
+										<td class="text-center">
+											<div class="list-icons d-inline-flex">
+												<a href="#" class="list-icons-item mr-10"><i class="fa fa-eye-slash"></i></a>
+												<div class="list-icons-item dropdown">
+													<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-text"></i></a>
+													<div class="dropdown-menu dropdown-menu-right">
+														<a href="#" class="dropdown-item"><i class="fa fa-download"></i> Download</a>
+														<a href="#" class="dropdown-item"><i class="fa fa-print"></i> Print</a>
+														<div class="dropdown-divider"></div>
+														<a href="#" class="dropdown-item"><i class="fa fa-pencil"></i> Edit</a>
+														<a href="#" class="dropdown-item"><i class="fa fa-remove"></i> Remove</a>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td>#0015</td>
+										<td>December 2017</td>
+										<td>
+											<h6 class="mb-0">
+												<a href="#">Matthew</a>
+												<span class="d-block text-muted">Payment method: Payoneer</span>
+											</h6>
+										</td>
+										<td>
+											<select name="status" class="form-control" data-placeholder="Select status">
+												<option value="overdue">Overdue</option>
+												<option value="hold">On hold</option>
+												<option value="pending">Pending</option>
+												<option value="paid">Paid</option>
+												<option value="invalid" selected="">Invalid</option>
+												<option value="cancel">Canceled</option>
+											</select>
+										</td>
+										<td>
+											March 23, 2018
+										</td>
+										<td>
+											<span class="badge badge-pill badge-warning">6 days</span>
+										</td>
+										<td>
+											<h6 class="mb-0 font-weight-bold">$369 <span class="d-block text-muted font-weight-normal">VAT $85</span></h6>
+										</td>
+										<td class="text-center">
+											<div class="list-icons d-inline-flex">
+												<a href="#" class="list-icons-item mr-10"><i class="fa fa-eye-slash"></i></a>
+												<div class="list-icons-item dropdown">
+													<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-text"></i></a>
+													<div class="dropdown-menu dropdown-menu-right">
+														<a href="#" class="dropdown-item"><i class="fa fa-download"></i> Download</a>
+														<a href="#" class="dropdown-item"><i class="fa fa-print"></i> Print</a>
+														<div class="dropdown-divider"></div>
+														<a href="#" class="dropdown-item"><i class="fa fa-pencil"></i> Edit</a>
+														<a href="#" class="dropdown-item"><i class="fa fa-remove"></i> Remove</a>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td>#0014</td>
+										<td>December 2017</td>
+										<td>
+											<h6 class="mb-0">
+												<a href="#">Elijah</a>
+												<span class="d-block text-muted">Payment method: Paypal</span>
+											</h6>
+										</td>
+										<td>
+											<select name="status" class="form-control" data-placeholder="Select status">
+												<option value="overdue">Overdue</option>
+												<option value="hold">On hold</option>
+												<option value="pending">Pending</option>
+												<option value="paid">Paid</option>
+												<option value="invalid">Invalid</option>
+												<option value="cancel" selected="">Canceled</option>
+											</select>
+										</td>
+										<td>
+											March 2, 2018
+										</td>
+										<td>
+											<span class="badge badge-pill badge-secondary">On hold</span>
+										</td>
+										<td>
+											<h6 class="mb-0 font-weight-bold">$985 <span class="d-block text-muted font-weight-normal">VAT $458</span></h6>
+										</td>
+										<td class="text-center">
+											<div class="list-icons d-inline-flex">
+												<a href="#" class="list-icons-item mr-10"><i class="fa fa-eye-slash"></i></a>
+												<div class="list-icons-item dropdown">
+													<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-text"></i></a>
+													<div class="dropdown-menu dropdown-menu-right">
+														<a href="#" class="dropdown-item"><i class="fa fa-download"></i> Download</a>
+														<a href="#" class="dropdown-item"><i class="fa fa-print"></i> Print</a>
+														<div class="dropdown-divider"></div>
+														<a href="#" class="dropdown-item"><i class="fa fa-pencil"></i> Edit</a>
+														<a href="#" class="dropdown-item"><i class="fa fa-remove"></i> Remove</a>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+
+									<tr>
+										<td>#0013</td>
+										<td>November 2017</td>
+										<td>
+											<h6 class="mb-0">
+												<a href="#">Liam</a>
+												<span class="d-block text-muted">Payment method: Wire transfer</span>
+											</h6>
+										</td>
+										<td>
+											<select name="status" class="form-control" data-placeholder="Select status">
+												<option value="overdue">Overdue</option>
+												<option value="hold">On hold</option>
+												<option value="pending" selected="">Pending</option>
+												<option value="paid">Paid</option>
+												<option value="invalid">Invalid</option>
+												<option value="cancel">Canceled</option>
+											</select>
+										</td>
+										<td>
+											February 25, 2018
+										</td>
+										<td>
+											<span class="badge badge-pill badge-success">Paid on Feb 15, 2018</span>
+										</td>
+										<td>
+											<h6 class="mb-0 font-weight-bold">$985 <span class="d-block text-muted font-weight-normal">VAT $124</span></h6>
+										</td>
+										<td class="text-center">
+											<div class="list-icons d-inline-flex">
+												<a href="#" class="list-icons-item mr-10"><i class="fa fa-eye-slash"></i></a>
+												<div class="list-icons-item dropdown">
+													<a href="#" class="list-icons-item dropdown-toggle" data-toggle="dropdown"><i class="fa fa-file-text"></i></a>
+													<div class="dropdown-menu dropdown-menu-right">
+														<a href="#" class="dropdown-item"><i class="fa fa-download"></i> Download</a>
+														<a href="#" class="dropdown-item"><i class="fa fa-print"></i> Print</a>
+														<div class="dropdown-divider"></div>
+														<a href="#" class="dropdown-item"><i class="fa fa-pencil"></i> Edit</a>
+														<a href="#" class="dropdown-item"><i class="fa fa-remove"></i> Remove</a>
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-2 col-lg-3 col-12">
+				<div class="box box-inverse box-success">
+				  <div class="box-body">
+					<div class="flexbox">
+					  <h5>Invoice</h5>
+					  <div class="dropdown">
+						<span class="dropdown-toggle no-caret" data-toggle="dropdown"><i class="ion-android-more-vertical rotate-90"></i></span>
+						<div class="dropdown-menu dropdown-menu-right">
+						  <a class="dropdown-item" href="#"><i class="ion-android-list"></i> Details</a>
+						  <a class="dropdown-item" href="#"><i class="ion-android-add"></i> Add new</a>
+						  <a class="dropdown-item" href="#"><i class="ion-android-refresh"></i> Refresh</a>
+						</div>
+					  </div>
+					</div>
+
+					<div class="text-center my-2">
+					  <div class="font-size-60">2,064</div>
+					  <span>Total Invoice</span>
+					</div>
+				  </div>
+				</div>
+				<div class="box box-inverse box-primary">
+				  <div class="box-body">
+					<div class="flexbox">
+					  <h5>Re Generate Invoice</h5>
+					  <div class="dropdown">
+						<span class="dropdown-toggle no-caret" data-toggle="dropdown"><i class="ion-android-more-vertical rotate-90"></i></span>
+						<div class="dropdown-menu dropdown-menu-right">
+						  <a class="dropdown-item" href="#"><i class="ion-android-list"></i> Details</a>
+						  <a class="dropdown-item" href="#"><i class="ion-android-add"></i> Add new</a>
+						  <a class="dropdown-item" href="#"><i class="ion-android-refresh"></i> Refresh</a>
+						</div>
+					  </div>
+					</div>
+
+					<div class="text-center my-2">
+					  <div class="font-size-60">1,738</div>
+					  <span>Re Generate Invoice</span>
+					</div>
+				  </div>				
+				</div>
+				<div class="box box-inverse box-danger">
+				  <div class="box-body">
+					<div class="flexbox">
+					  <h5>Overdue Payment Invoice</h5>
+					  <div class="dropdown">
+						<span class="dropdown-toggle no-caret" data-toggle="dropdown"><i class="ion-android-more-vertical rotate-90"></i></span>
+						<div class="dropdown-menu dropdown-menu-right">
+						  <a class="dropdown-item" href="#"><i class="ion-android-list"></i> Details</a>
+						  <a class="dropdown-item" href="#"><i class="ion-android-add"></i> Add new</a>
+						  <a class="dropdown-item" href="#"><i class="ion-android-refresh"></i> Refresh</a>
+						</div>
+					  </div>
+					</div>
+
+					<div class="text-center my-2">
+					  <div class="font-size-60">1100</div>
+					  <span>Overdue Payment Invoice</span>
+					</div>
+				  </div>
+
+				</div>
+				<div class="box box-inverse box-warning">
+				  <div class="box-body">
+					<div class="flexbox">
+					  <h5>Pending Invoice</h5>
+					  <div class="dropdown">
+						<span class="dropdown-toggle no-caret" data-toggle="dropdown"><i class="ion-android-more-vertical rotate-90"></i></span>
+						<div class="dropdown-menu dropdown-menu-right">
+						  <a class="dropdown-item" href="#"><i class="ion-android-list"></i> Details</a>
+						  <a class="dropdown-item" href="#"><i class="ion-android-add"></i> Add new</a>
+						  <a class="dropdown-item" href="#"><i class="ion-android-refresh"></i> Refresh</a>
+						</div>
+					  </div>
+					</div>
+
+					<div class="text-center my-2">
+					  <div class="font-size-60">964</div>
+					  <span>Pending</span>
+					</div>
+				  </div>
+				</div>
+			</div>
+		  </div>
+		</section>
+		<!-- /.content -->
+	  </div>
+  </div>
+  <!-- /.content-wrapper -->
+
+ 
+   <footer class="main-footer">
+    <div class="pull-right d-none d-sm-inline-block">
+        <ul class="nav nav-primary nav-dotted nav-dot-separated justify-content-center justify-content-md-end">
+		  <li class="nav-item">
+			<a class="nav-link" href="javascript:void(0)">FAQ</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Purchase Now</a>
+		  </li>
+		</ul>
+    </div>
+	  &copy; 2020 <a href="javascript:;">Multipurpose Themes</a>. All Rights Reserved.
+  </footer>
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar">
+	  
+	<div class="rpanel-title"><span class="pull-right btn btn-circle btn-danger"><i class="ion ion-close text-white" data-toggle="control-sidebar"></i></span> </div>  <!-- Create the tabs -->
+    <ul class="nav nav-tabs control-sidebar-tabs">
+      <li class="nav-item"><a href="#control-sidebar-home-tab" data-toggle="tab" class="active"><i class="mdi mdi-message-text"></i></a></li>
+      <li class="nav-item"><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="mdi mdi-playlist-check"></i></a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <!-- Home tab content -->
+      <div class="tab-pane active" id="control-sidebar-home-tab">
+          <div class="flexbox">
+			<a href="javascript:void(0)" class="text-grey">
+				<i class="ti-more"></i>
+			</a>	
+			<p>Users</p>
+			<a href="javascript:void(0)" class="text-right text-grey"><i class="ti-plus"></i></a>
+		  </div>
+		  <div class="lookup lookup-sm lookup-right d-none d-lg-block">
+			<input type="text" name="s" placeholder="Search" class="w-p100">
+		  </div>
+          <div class="media-list media-list-hover mt-20">
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-success" href="#">
+				<img src="../stylesheet/picture/1.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Tyler</strong></a>
+				</p>
+				<p>Praesent tristique diam...</p>
+				  <span>Just now</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-danger" href="#">
+				<img src="../stylesheet/picture/2.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Luke</strong></a>
+				</p>
+				<p>Cras tempor diam ...</p>
+				  <span>33 min ago</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-warning" href="#">
+				<img src="../stylesheet/picture/3.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Evan</strong></a>
+				</p>
+				<p>In posuere tortor vel...</p>
+				  <span>42 min ago</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-primary" href="#">
+				<img src="../stylesheet/picture/4.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Evan</strong></a>
+				</p>
+				<p>In posuere tortor vel...</p>
+				  <span>42 min ago</span>
+			  </div>
+			</div>			
+			
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-success" href="#">
+				<img src="../stylesheet/picture/1.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Tyler</strong></a>
+				</p>
+				<p>Praesent tristique diam...</p>
+				  <span>Just now</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-danger" href="#">
+				<img src="../stylesheet/picture/2.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Luke</strong></a>
+				</p>
+				<p>Cras tempor diam ...</p>
+				  <span>33 min ago</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-warning" href="#">
+				<img src="../stylesheet/picture/3.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Evan</strong></a>
+				</p>
+				<p>In posuere tortor vel...</p>
+				  <span>42 min ago</span>
+			  </div>
+			</div>
+
+			<div class="media py-10 px-0">
+			  <a class="avatar avatar-lg status-primary" href="#">
+				<img src="../stylesheet/picture/4.jpg" alt="...">
+			  </a>
+			  <div class="media-body">
+				<p class="font-size-16">
+				  <a class="hover-primary" href="#"><strong>Evan</strong></a>
+				</p>
+				<p>In posuere tortor vel...</p>
+				  <span>42 min ago</span>
+			  </div>
+			</div>
+			  
+		  </div>
+
+      </div>
+      <!-- /.tab-pane -->
+      <!-- Settings tab content -->
+      <div class="tab-pane" id="control-sidebar-settings-tab">
+          <div class="flexbox">
+			<a href="javascript:void(0)" class="text-grey">
+				<i class="ti-more"></i>
+			</a>	
+			<p>Todo List</p>
+			<a href="javascript:void(0)" class="text-right text-grey"><i class="ti-plus"></i></a>
+		  </div>
+        <ul class="todo-list mt-20">
+			<li class="py-15 px-5 by-1">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_1" class="filled-in">
+			  <label for="basic_checkbox_1" class="mb-0 h-15"></label>
+			  <!-- todo text -->
+			  <span class="text-line">Nulla vitae purus</span>
+			  <!-- Emphasis label -->
+			  <small class="badge bg-danger"><i class="fa fa-clock-o"></i> 2 mins</small>
+			  <!-- General tools such as edit or delete-->
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_2" class="filled-in">
+			  <label for="basic_checkbox_2" class="mb-0 h-15"></label>
+			  <span class="text-line">Phasellus interdum</span>
+			  <small class="badge bg-info"><i class="fa fa-clock-o"></i> 4 hours</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5 by-1">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_3" class="filled-in">
+			  <label for="basic_checkbox_3" class="mb-0 h-15"></label>
+			  <span class="text-line">Quisque sodales</span>
+			  <small class="badge bg-warning"><i class="fa fa-clock-o"></i> 1 day</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_4" class="filled-in">
+			  <label for="basic_checkbox_4" class="mb-0 h-15"></label>
+			  <span class="text-line">Proin nec mi porta</span>
+			  <small class="badge bg-success"><i class="fa fa-clock-o"></i> 3 days</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5 by-1">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_5" class="filled-in">
+			  <label for="basic_checkbox_5" class="mb-0 h-15"></label>
+			  <span class="text-line">Maecenas scelerisque</span>
+			  <small class="badge bg-primary"><i class="fa fa-clock-o"></i> 1 week</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_6" class="filled-in">
+			  <label for="basic_checkbox_6" class="mb-0 h-15"></label>
+			  <span class="text-line">Vivamus nec orci</span>
+			  <small class="badge bg-info"><i class="fa fa-clock-o"></i> 1 month</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5 by-1">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_7" class="filled-in">
+			  <label for="basic_checkbox_7" class="mb-0 h-15"></label>
+			  <!-- todo text -->
+			  <span class="text-line">Nulla vitae purus</span>
+			  <!-- Emphasis label -->
+			  <small class="badge bg-danger"><i class="fa fa-clock-o"></i> 2 mins</small>
+			  <!-- General tools such as edit or delete-->
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_8" class="filled-in">
+			  <label for="basic_checkbox_8" class="mb-0 h-15"></label>
+			  <span class="text-line">Phasellus interdum</span>
+			  <small class="badge bg-info"><i class="fa fa-clock-o"></i> 4 hours</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5 by-1">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_9" class="filled-in">
+			  <label for="basic_checkbox_9" class="mb-0 h-15"></label>
+			  <span class="text-line">Quisque sodales</span>
+			  <small class="badge bg-warning"><i class="fa fa-clock-o"></i> 1 day</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+			<li class="py-15 px-5">
+			  <!-- checkbox -->
+			  <input type="checkbox" id="basic_checkbox_10" class="filled-in">
+			  <label for="basic_checkbox_10" class="mb-0 h-15"></label>
+			  <span class="text-line">Proin nec mi porta</span>
+			  <small class="badge bg-success"><i class="fa fa-clock-o"></i> 3 days</small>
+			  <div class="tools">
+				<i class="fa fa-edit"></i>
+				<i class="fa fa-trash-o"></i>
+			  </div>
+			</li>
+		  </ul>
+      </div>
+      <!-- /.tab-pane -->
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+  
+  <!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
+  <div class="control-sidebar-bg"></div>
+</div>
+<!-- ./wrapper -->
+	
+	<!-- ./side demo panel -->
+	{include:"./include_setting.html"}
+	{include:"./include_sticky_toolbar_buttom.html"}
+	{include:"./include_rightmenu.html"}
+	<!-- Sidebar -->
+	
+	{include:"./include_chat.html"}
+	
+	<!-- Page Content overlay -->
+	
+	
+	<!-- Vendor JS -->
+	<script src="../stylesheet/js/vendors.min.js"></script>
+	<script src="../stylesheet/js/chat-popup.js"></script>
+    <script src="../stylesheet/js/feather.min.js"></script>	<script src="../stylesheet/js/datatables.min.js"></script>
+	
+	<!-- EduAdmin App -->
+	<script src="../stylesheet/js/template.js"></script>
+	
+	<script src="../stylesheet/js/data-table.js"></script>
+	
+	
+	{include:"./include_public_script.html"}
+</body>
+</html>

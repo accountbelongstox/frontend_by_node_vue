@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+
+	<title>DesktopManager</title>
+
+	<!-- Vendors Style-->
+	<link rel="stylesheet" href="../stylesheet/css/vendors_css.css">
+
+	<!-- Style-->
+	<link rel="stylesheet" href="../stylesheet/css/style.css">
+	<link rel="stylesheet" href="../stylesheet/css/skin_color.css">
+
+	<link rel="stylesheet" href="../stylesheet/plugin/alertify.css">
+	<link rel="stylesheet" href="../stylesheet/plugin/themes/bootstrap.css">
+</head>
+
+<body class="hold-transition light-skin sidebar-mini theme-primary fixed sidebar-collapse">
+	<div id="loader" style="opacity: 0.05; display: none;"></div>
+	<div class="wrapper">
+		<header class="main-header" >
+    <div class="d-flex align-items-center logo-box justify-content-start">
+        <a href="#" class="waves-effect waves-light nav-link d-none d-md-inline-block mx-10 push-btn bg-transparent"
+            data-toggle="push-menu" role="button">
+            <span class="icon-Align-left"><span class="path1"></span><span class="path2"></span><span
+                    class="path3"></span></span>
+        </a>
+        <!-- Logo -->
+        <a href="javascript:" class="logo">
+            <!-- logo-->
+            <div class="logo-lg">
+                <span class="light-logo"><img src="../stylesheet/img/logo-light-text.png" alt="logo"></span>
+                <span class="dark-logo"><img src="../stylesheet/img/logo-dark-text.png" alt="logo"></span>
+            </div>
+        </a>
+    </div>
+    <!-- Header Navbar -->
+    <nav class="navbar navbar-static-top">
+        <!-- Sidebar toggle button-->
+        <div class="app-menu">
+            <ul class="header-megamenu nav">
+                <!-- <li class="btn-group nav-item d-md-none">
+                    <a href="#" class="waves-effect waves-light nav-link push-btn" data-toggle="push-menu"
+                        role="button">
+                        <span class="icon-Align-left"><span class="path1"></span><span class="path2"></span><span
+                                class="path3"></span></span>
+                    </a>
+                </li>
+                <li class="btn-group nav-item d-none d-xl-inline-block">
+                    <a href="contact_app_chat.html" class="waves-effect waves-light nav-link svg-bt-icon" title="Chat">
+                        <i class="icon-Chat"><span class="path1"></span><span class="path2"></span></i>
+                    </a>
+                </li>
+                <li class="btn-group nav-item d-none d-xl-inline-block">
+                    <a href="mailbox.html" class="waves-effect waves-light nav-link svg-bt-icon" title="Mailbox">
+                        <i class="icon-Mailbox"><span class="path1"></span><span class="path2"></span></i>
+                    </a>
+                </li>
+                <li class="btn-group nav-item d-none d-xl-inline-block">
+                    <a href="extra_taskboard.html" class="waves-effect waves-light nav-link svg-bt-icon"
+                        title="Taskboard">
+                        <i class="icon-Clipboard-check"><span class="path1"></span><span class="path2"></span><span
+                                class="path3"></span></i>
+                    </a>
+                </li> -->
+                
+
+                <li class="btn-group d-lg-inline-flex d-none">
+                    <div class="app-menu">
+                        <div class="search-bx mx-5">
+                            <form>
+                                <div class="input-group">
+                                    <input type="search" class="form-control" placeholder="Search" aria-label="Search"
+                                        aria-describedby="button-addon2">
+                                    <div class="input-group-append">
+                                        <button class="btn" type="submit" id="button-addon3"><i
+                                                class="ti-search"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="navbar-custom-menu r-side">
+            <ul class="nav navbar-nav">
+
+                <li style="display: none;" class="show-software_update">
+                    <a href="javascript:" title="Update" class="waves-effect waves-light event-click-software_update">
+                        <i class="icon-Cloud-upload"><span class="path1"></span><span class="path2"></span></i>
+                    </a>
+                </li>
+
+                <!-- Notifications -->
+                <li class="dropdown notifications-menu">
+                    <a href="#" class="waves-effect waves-light dropdown-toggle" data-toggle="dropdown"
+                        title="Notifications">
+                        <i class="icon-Notifications"><span class="path1"></span><span class="path2"></span></i>
+                    </a>
+                    <ul class="dropdown-menu animated bounceIn">
+
+                        <li class="header">
+                            <div class="p-20">
+                                <div class="flexbox">
+                                    <div>
+                                        <h4 class="mb-0 mt-0">Notifications</h4>
+                                    </div>
+                                    <div>
+                                        <a href="#" class="text-danger">Clear All</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <!-- inner menu: contains the actual data -->
+                            <ul class="menu sm-scrol">
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-users text-info"></i> Curabitur id eros quis nunc
+                                        suscipit blandit.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-warning text-warning"></i> Duis malesuada justo eu
+                                        sapien elementum, in semper diam posuere.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-users text-danger"></i> Donec at nisi sit amet tortor
+                                        commodo porttitor pretium a erat.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-shopping-cart text-success"></i> In gravida mauris et
+                                        nisi
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-user text-danger"></i> Praesent eu lacus in libero
+                                        dictum fermentum.
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-user text-primary"></i> Nunc fringilla lorem
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <i class="fa fa-user text-success"></i> Nullam euismod dolor ut quam
+                                        interdum, at scelerisque ipsum imperdiet.
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer">
+                            <a href="#">View all</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <!-- User Account-->
+                <li class="dropdown user user-menu">
+                    <a href="#" class="waves-effect waves-light dropdown-toggle" data-toggle="dropdown" title="Settings">
+                        <i class="icon-Settings-1"><span class="path1"></span><span class="path2"></span></i>
+                    </a>
+                    <ul class="dropdown-menu animated flipInX">
+                        <li class="user-body">
+                            <a class="dropdown-item" href="javascript:" id="show_setting"><i
+                                    class="ti-settings text-muted mr-2"></i>
+                                系统设置</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#"><i class="ti-lock text-muted mr-2"></i> 重置系统</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="btn-group nav-item d-lg-inline-flex d-none">
+                    <a href="#" data-provide="fullscreen" class="waves-effect waves-light nav-link full-screen"
+                        title="Full Screen">
+                        <i class="icon-Expand-arrows"><span class="path1"></span><span class="path2"></span></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript:" title="Reluanch" class="waves-effect waves-light event-click-relaunch">
+                        <i class="icon-Repeat"><span class="path1"></span><span class="path2"></span></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="javascript:" title="Close" class="waves-effect waves-light event-click-close">
+                        <i class="icon-Shutdown"><span class="path1"></span><span class="path2"></span></i>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+</header>
+		<aside class="main-sidebar">
+    <!-- sidebar-->
+    <section class="sidebar position-relative">
+        <div class="multinav">
+            <div class="multinav-scroll" style="height: 100%;">
+                <!-- sidebar menu-->
+                <ul class="sidebar-menu" data-widget="tree">
+                    <li class="header">Icons Dashboard</li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="icon-Display2"><span class="path1"></span><span
+                                class="path2"></span<span
+                                class="path3"></span></i>
+                            <span>Icons Dashboard</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="index.html"><i class="icon-Commit"><span class="path1"></span><span
+                                            class="path2"></span></i>Icons Dashboard</a></li>
+                        </ul>
+                    </li>
+                    <li class="header">Projects & Tools</li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="icon-Layout-4-blocks"><span class="path1"></span><span class="path2"></span></i>
+                            <span>MyProjects</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="index.html"><i class="icon-Commit"><span class="path1"></span><span
+                                            class="path2"></span></i>localProject</a></li>
+                        </ul>
+                    </li>
+                    <li class="header">Tools & UI </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="icon-Layout-grid"><span class="path1"></span><span class="path2"></span></i>
+                            <span>Tools</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-right pull-right"></i>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="index_tools.html"><i class="icon-Commit"><span class="path1"></span><span
+                                            class="path2"></span></i>Folder monitoring</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <div class="sidebar-footer">
+        <a href="javascript:void(0)" class="link setting-box-toggle" data-toggle="tooltip" title=""
+            data-original-title="Settings" aria-describedby="tooltip92529"><span class="icon-Settings-2"></span></a>
+        <a href="javascript:void(0)" class="link" data-toggle="tooltip" title="" data-original-title="Logout"><span
+                class="icon-Lock-overturning"><span class="path1"></span><span class="path2"></span></span></a>
+    </div>
+</aside>
+		<!-- Content Wrapper. Contains page content -->
+		<div class="content-wrapper">
+			<div class="container-full">
+				<!-- Main content -->
+				<section class="content">
+					<div class="row">
+						<div class="col-xl-12 col-12">
+							<div id="icons_container"
+								style="flex-wrap: wrap !important;flex-wrap: wrap;display: flex;justify-content: flex-start;">
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- /.content -->
+			</div>
+		</div>
+		<!-- /.control-sidebar -->
+
+		<!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
+
+	</div>
+	<!-- ./wrapper -->
+
+	<!-- Sidebar -->
+
+
+	<div class="chat-box-body-css setting_panel_body">
+	<div class="chat-box">
+		<div class="chat-box-header p-15 d-flex justify-content-between align-items-center">
+			<div class="text-center flex-grow-1">
+				<div class="text-dark font-size-18">设置项</div>
+			</div>
+			<div class="chat-box-toggle">
+				<button
+					class="waves-effect waves-circle btn btn-circle btn-danger-light h-40 w-40 rounded-circle l-h-45 setting-box-toggle"
+					type="button">
+					<span class="icon-Close font-size-22"><span class="path1"></span><span class="path2"></span></span>
+				</button>
+			</div>
+		</div>
+		<div class="chat-box-body">
+			<div class="chat-box-overlay">
+			</div>
+			<div class="chat-logs">
+				<div class="row">
+
+					<div class="col-12">
+						<div class="box">
+							<div class="box-header with-border">
+								<h4 class="box-title">开发语言版本</h4>
+							</div>
+							<!-- /.box-header -->
+							<div class="box-body">
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">默认Python版本</label>
+									<div class="col-md-10">
+										<input class="form-control" id="default_python" data-change="" type="text">
+										<span class="form-text text-muted">
+											<code>默认Python版本（ default_python ） 格式:3.x</code></span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">默认Java版本</label>
+									<div class="col-md-10">
+										<input class="form-control" id="default_java" data-change="" type="text">
+										<span class="form-text text-muted">
+											<code>默认Java版本（ default_java ）</code></span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">默认Node版本</label>
+									<div class="col-md-10">
+										<input class="form-control" id="default_node" data-change="" type="text">
+										<span class="form-text text-muted">
+											<code>默认Node版本（ default_node ）</code></span>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="box-header with-border">
+								<h4 class="box-title">默认路径</h4>
+							</div>
+							<!-- /.box-header -->
+							<div class="box-body">
+
+
+								<div class="demo-checkbox">
+									<input type="checkbox" id="default_open_soft_mode" data-change="" value="true"
+										class="filled-in chk-col-primary" checked="">
+									<label for="default_open_soft_mode">默认以管理员方式打开软件</label>
+								</div>
+
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">软件路径</label>
+									<div class="col-md-10">
+										<input class="form-control" id="soft_localpath" data-change="" type="text">
+										<span class="form-text text-muted">
+											<code>本机默认软件安装路径 （ soft_localpath ）</code></span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">语言路径</label>
+									<div class="col-md-10">
+										<input class="form-control" id="local_envdir" data-change="" type="text">
+										<span class="form-text text-muted">
+											<code>本地环境路径 （ local_envdir ）</code></span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">项目路径</label>
+									<div class="col-md-10">
+										<input class="form-control" id="programing_dir" data-change="" type="text">
+										<span class="form-text text-muted">
+											<code>正在开发项目环境路径 （ programing_dir ）</code></span>
+									</div>
+								</div>
+							</div>
+
+							<!-- /.box-body -->
+							<div class="box-header with-border">
+								<h4 class="box-title">本机备份</h4>
+							</div>
+							<!-- /.box-header -->
+							<div class="box-body">
+
+								<div class="demo-checkbox">
+									<input type="checkbox" data-change="" value="true" id="setting_soft_backup_switch"
+										class="chk-col-primary checkbox-back_applications" checked="">
+									<label for="setting_soft_backup_switch">是否备份软件</label>
+								</div>
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">备份路径</label>
+									<div class="col-md-10">
+										<input class="form-control" id="setting_soft_local_bakup_path" data-change=""
+											type="text">
+										<span class="form-text text-muted">
+											<code>软件备份路径. （ setting_soft_local_bakup_path ），例( D:/xxx, ftp://xxx.xxx:21/user:pwd , \\192.168.100.x)</code></span>
+									</div>
+								</div>
+							</div>
+
+							<!-- /.box-body -->
+							<div class="box-header with-border">
+								<h4 class="box-title">更新设置</h4>
+							</div>
+							<!-- /.box-header -->
+							<div class="box-body">
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">更新URL</label>
+									<div class="col-md-10">
+										<input class="form-control" id="setting_soft_remote_update_url" data-change=""
+											type="url">
+										<span class="form-text text-muted">
+											<code>软件有更新下载地址.（ setting_soft_remote_update_url ）例(http:// , ftp://xxx.xxx:21/user:pwd , \\192.168.100.x , D:/xxx )</code>
+										</span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">同步备份地址(1)</label>
+									<div class="col-md-10">
+										<input class="form-control" id="backup_remoteurl" data-change="" type="url">
+										<span class="form-text text-muted">
+											<code>本地文件夹指定同步备份.（ backup_remoteurl ）例(http:// , ftp://xxx.xxx:21/user:pwd , \\192.168.100.x , D:/xxx )</code>
+										</span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">远程软件配置文件</label>
+									<div class="col-md-10">
+										<input class="form-control" id="remote_soft_icon_conf" data-change="" type="url">
+										<span class="form-text text-muted">
+											<code>remote_soft_icon_conf</code>
+										</span>
+									</div>
+								</div>
+							</div>
+							<!-- /.box-body -->
+							<!-- <div class="box-header with-border">
+								<h4 class="box-title">已部署环境</h4>
+							</div>
+							/.box-header
+							<div class="box-body">
+		
+								<div class="demo-checkbox">
+									<input type="checkbox" id="basic_checkbox_1" checked="">
+											<label for="basic_checkbox_1">Default</label>
+											<input type="checkbox" id="basic_checkbox_2" class="filled-in" checked="">
+											<label for="basic_checkbox_2">Filled In</label>
+									<input type="checkbox" id="java_installed_version" class="filled-in chk-col-success"
+										checked="" disabled="">
+									<label for="java_installed_version"><i class="mdi mdi-coffee-outline text-success"></i>
+										Java</label>
+									<input type="checkbox" id="python_installed_version" class="filled-in chk-col-success"
+										checked="" disabled="">
+									<label for="python_installed_version"><i
+											class="mdi mdi-language-python-text text-success"></i> Python</label>
+									<input type="checkbox" id="node_installed_version" class="filled-in chk-col-success"
+										checked="" disabled="">
+									<label for="node_installed_version"><i class="mdi mdi-language-javascript text-success"></i>
+										Node</label>
+									<input type="checkbox" id="rust_installed_version" class="filled-in chk-col-success"
+										checked="" disabled="">
+									<label for="rust_installed_version"><i class="mdi mdi-xml text-success"></i>
+										Rust</label>
+									<input type="checkbox" id="cplus_installed_version" class="filled-in chk-col-success"
+										checked="" disabled="">
+									<label for="cplus_installed_version"><i class="mdi mdi-language-cpp text-success"></i>
+										C++</label>
+								</div>
+		
+							</div> -->
+							<!-- /.box-body -->
+							<div class="box-header with-border">
+								<h4 class="box-title">软件变量</h4>
+							</div>
+							<!-- /.box-header -->
+							<div class="box-body">
+								<div class="form-group">
+									<h5>软连接 <span class="text-danger">(请勿轻易修改)</span></h5>
+									<div class="controls">
+										<textarea data-change="" id="soft_link_variable"
+											class="form-control"></textarea>
+									</div>
+									<span class="form-text text-muted">
+										<code>(强行将空格左边的路径连接到右边).（ soft_link_variable ）例( C:\Program Files\xxx XXX )</code>
+									</span>
+								</div>
+							</div>
+							<!-- /.box-body -->
+							<div class="box-header with-border">
+								<i class="fa fa-check-square-o text-black"></i>
+
+								<h4 class="box-title">Basic Checkbox Design Colors with Filled In</h4>
+							</div>
+							<!-- /.box-header -->
+							<div class="box-body">
+
+								<div class="demo-checkbox">
+									<input type="checkbox" id="md_checkbox_21" class="filled-in chk-col-primary"
+										checked="">
+									<label for="md_checkbox_21">Primary</label>
+									<input type="checkbox" id="md_checkbox_23" class="filled-in chk-col-success"
+										checked="">
+									<label for="md_checkbox_23">Success</label>
+									<input type="checkbox" id="md_checkbox_24" class="filled-in chk-col-info"
+										checked="">
+									<label for="md_checkbox_24">Info</label>
+									<input type="checkbox" id="md_checkbox_27" class="filled-in chk-col-warning"
+										checked="">
+									<label for="md_checkbox_27">Warning</label>
+									<input type="checkbox" id="md_checkbox_29" class="filled-in chk-col-danger"
+										checked="">
+									<label for="md_checkbox_29">Danger</label>
+								</div>
+
+							</div>
+							<!-- /.box-body -->
+							<div class="box-header with-border">
+								<i class="fa fa-check-circle text-black"></i>
+
+								<h4 class="box-title">Basic Radio Button</h4>
+							</div>
+							<!-- /.box-header -->
+							<div class="box-body">
+
+								<div class="demo-radio-button">
+									<input name="group1" type="radio" id="radio_1" checked="">
+									<label for="radio_1">Radio - 1</label>
+									<input name="group1" type="radio" id="radio_2">
+									<label for="radio_2">Radio - 2</label>
+									<input name="group1" type="radio" class="with-gap" id="radio_3">
+									<label for="radio_3">Radio - With Gap</label>
+									<input name="group1" type="radio" id="radio_4" class="with-gap">
+									<label for="radio_4">Radio - With Gap</label>
+									<input name="group2" type="radio" id="radio_5" checked="" disabled="">
+									<label for="radio_5">Radio - Disabled</label>
+									<input name="group3" type="radio" id="radio_6" class="with-gap" checked=""
+										disabled="">
+									<label for="radio_6">Radio - Disabled</label>
+								</div>
+
+							</div>
+							<!-- /.box-body -->
+							<div class="box-header with-border">
+								<i class="fa fa-check-circle text-black"></i>
+
+								<h4 class="box-title">Basic Radio Button Design Colors</h4>
+							</div>
+							<!-- /.box-header -->
+							<div class="box-body">
+
+								<div class="demo-radio-button">
+									<input name="group4" type="radio" id="radio_7" class="radio-col-primary" checked="">
+									<label for="radio_7">Primary</label>
+									<input name="group4" type="radio" id="radio_9" class="radio-col-success">
+									<label for="radio_9">Success</label>
+									<input name="group4" type="radio" id="radio_10" class="radio-col-info">
+									<label for="radio_10">Info</label>
+									<input name="group4" type="radio" id="radio_12" class="radio-col-warning">
+									<label for="radio_12">Warning</label>
+									<input name="group4" type="radio" id="radio_13" class="radio-col-danger">
+									<label for="radio_13">Danger</label>
+								</div>
+
+							</div>
+							<!-- /.box-body -->
+							<div class="box-header with-border">
+								<i class="fa fa-check-circle-o text-black"></i>
+
+								<h4 class="box-title">Basic Radio Button Design Colors with Outline</h4>
+							</div> 
+							<!-- /.box-header -->
+							<div class="box-body">
+
+								<div class="demo-radio-button">
+									<input name="group5" type="radio" id="radio_30" class="with-gap radio-col-primary"
+										checked="">
+									<label for="radio_30">Primary</label>
+									<input name="group5" type="radio" id="radio_32" class="with-gap radio-col-success">
+									<label for="radio_32">Success</label>
+									<input name="group5" type="radio" id="radio_33" class="with-gap radio-col-info">
+									<label for="radio_33">Info</label>
+									<input name="group5" type="radio" id="radio_35" class="with-gap radio-col-warning">
+									<label for="radio_35">Warning</label>
+									<input name="group5" type="radio" id="radio_36" class="with-gap radio-col-danger">
+									<label for="radio_36">Danger</label>
+								</div>
+
+							</div>
+							<!-- /.box-body -->
+						</div>
+						<!-- /.box -->
+					</div>
+					<!-- ./col -->
+				</div>
+			</div><!--chat-log -->
+		</div>
+	</div>
+</div>
+
+	<div class="sticky-toolbar-buttom">
+    <div id="java_field" class="badge badge-pill badge-primary-light font-size-16 event-click-openenvdir" title="Java"><i class="mdi mdi-coffee-outline"></i> <span>Java</span> <span class="java_version"></span></div>
+    <div id="python_field" class="badge badge-pill badge-primary-light font-size-16 event-click-openenvdir" title="Python"><i class="mdi mdi-language-python-text"></i> <span>Python</span> <span class="python_version"></span></div>
+    <div id="node_field" class="badge badge-pill badge-primary-light font-size-16 event-click-openenvdir" title="Node.js"><i class="mdi mdi-nodejs"></i> <span>Node.js</span> <span class="node_version"></span></div>
+    <div id="rust_field" class="badge badge-pill badge-primary-light font-size-16 event-click-openenvdir" title="Rust"><i class="mdi mdi-read"></i> <span>Rust</span> <span class="rust_version"></span></div>
+    <div id="go_field" class="badge badge-pill badge-primary-light font-size-16 event-click-openenvdir" title="Go"><i class="mdi mdi-google"></i> <span>Go</span> <span class="go_version"></span></div>
+    <div id="ruby_field" class="badge badge-pill badge-primary-light font-size-16 event-click-openenvdir" title="ruby"><i class="mdi mdi-xml"></i> <span>ruby</span> <span class="ruby_version"></span></div>
+    <div id="visualstudio_field" data-env="visualstudio" class="badge badge-pill badge-primary-light font-size-16 event-click-insatllEvn" title="Visualstudio"><i class="mdi mdi-visualstudio"></i> <span>VisualStudio</span> <span class="visualstudio_version"></span></div>
+    <div id="hyperv_field" class="badge badge-pill badge-primary-light font-size-16 event-click-openenvdir" title="Hyper-V"><i class="mdi mdi-laptop-windows"></i> <span>Hyper-V</span> <span class="hyperv_version"></span></div>
+    <div id="wsl_field" class="badge badge-pill badge-primary-light font-size-16 event-click-openenvdir" title="WSL2"><i class="mdi mdi-linux"></i> <span>WSL2</span> <span class="wsl_version"></span></div>
+    <div id="office_field" class="badge badge-pill badge-primary-light font-size-16 event-click-openenvdir" title="office"><i class="mdi mdi-office"></i> </div>
+    <div id="github_field" class="badge badge-pill badge-primary-light font-size-16 event-click-openenvdir" title="github"><i class="mdi mdi-github-circle"></i> </div>
+    <div id="jetbrains_field" class="badge font-size-16 event-click-openenvdir" title="Jetbrains">
+        <button type="button" class="waves-effect waves-light btn mb-5 bg-gradient-secondary">
+            <img width="15" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MCIgaGVpZ2h0PSI3MCIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDcwIDcwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9InFvZGFuYV9zdmdfX2EiIHgxPSItMS4zNTUiIHgyPSI1NS43MSIgeTE9IjU0Ljk3MSIgeTI9IjQ2Ljc3MiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iLjE3NiIgc3RvcC1jb2xvcj0iI0ZDN0EyNiIvPjxzdG9wIG9mZnNldD0iLjYzNCIgc3RvcC1jb2xvcj0iI0ZGMzE4QyIvPjwvbGluZWFyR3JhZGllbnQ+PGxpbmVhckdyYWRpZW50IGlkPSJxb2RhbmFfc3ZnX19iIiB4MT0iLTkuNzQyIiB4Mj0iNzEuNDkzIiB5MT0iLS44NTYiIHkyPSI1OS41MTIiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBzdG9wLWNvbG9yPSIjRkYzMThDIi8+PHN0b3Agb2Zmc2V0PSIuMzk5IiBzdG9wLWNvbG9yPSIjQjU0NEM2Ii8+PHN0b3Agb2Zmc2V0PSIuODc0IiBzdG9wLWNvbG9yPSIjRkYzMThDIi8+PC9saW5lYXJHcmFkaWVudD48bGluZWFyR3JhZGllbnQgaWQ9InFvZGFuYV9zdmdfX2MiIHgxPSItMTkuMjEiIHgyPSI3MS4wOTgiIHkxPSIyNS44ODciIHkyPSI0LjY0NSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIHN0b3AtY29sb3I9IiNGRjMxOEMiLz48c3RvcCBvZmZzZXQ9Ii4yIiBzdG9wLWNvbG9yPSIjRDczQkFCIi8+PHN0b3Agb2Zmc2V0PSIuNTE1IiBzdG9wLWNvbG9yPSIjOUQ0QUQ4Ii8+PHN0b3Agb2Zmc2V0PSIuNzQ4IiBzdG9wLWNvbG9yPSIjNzk1M0Y0Ii8+PHN0b3Agb2Zmc2V0PSIuODcyIiBzdG9wLWNvbG9yPSIjNkI1N0ZGIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHBhdGggZmlsbD0idXJsKCNxb2RhbmFfc3ZnX19hKSIgZD0iTTQ3LjAwMiAzMC40OTYgMTMuMzQgMzcuNTQxYy0uODcuMTQ1LTEuNzQyLjI5LTIuNjEzLjU4Mi0yLjY4Mi43OTctNS4wMDIgMi4zOTYtNi43NDQgNC42NDZDLTYuMSA1NS44NDIgNC4zMDUgNzIuOTQgMjAuMTYgNjkuNTY3TDU2IDY0LjQyNGM1LjI2OS0xLjA4NiA4LjQxMi0zLjQyNiAxMC42NjEtNi43NjYgOS41NzYtMTQuMzA3LTIuODMxLTMyLjEtMTkuNjU5LTI3LjE2MloiLz48cGF0aCBmaWxsPSJ1cmwoI3FvZGFuYV9zdmdfX2IpIiBkPSJNMjguNDc4IDQuNDNDMjQuMzQyLjY1MiAxOC4yNDItMS4xNiAxMS4zNDMuNzk3YTE0LjMzOCAxNC4zMzggMCAwIDAtNy4xODggNS4wMTJjLTYuODk4IDguOTMtNC41NzIgMTkuNjc1IDIuMzI2IDI1LjE5NWwzNi44ODMgMzAuNzg1YzMuNzAyIDIuNDY5IDguNDkzIDMuNTU5IDEzLjc5MyAyLjM5OCAzLjkyLS44NyA3LjI2MS0zLjE5NSA5LjUxMi02LjUzNSA1LjY2My04LjQ5NiAzLjYzMi0xOC4yOTctMi41NC0yMy43NDJMMjguNDc4IDQuNDNaIi8+PHBhdGggZmlsbD0idXJsKCNxb2RhbmFfc3ZnX19jKSIgZD0iTTE2LjEyOC4wNzRjLTEuODE4LjE0NS0zLjQyMi4zNjMtNC43MzIuNzk3LTIuODQyLjgtNS4zODkgMi41NDMtNy4yMTIgNC45MzgtMTAuNzc3IDEzLjk0MS44MDMgMzIuMDkzIDE3LjI2IDI4LjQ2bDQ0LjMzNy0xNi41ODFjMS4yOTktLjUzIDIuMzQ1LTEuMDU5IDMuMDctMi4yMjMgMi43NjctNC4xMzcuMjI4LTguNjc2LTQuMzIxLTkuMTg1TDE3Ljk0OCAwYy0uNjU2IDAtMS4yMzUgMC0xLjgyLjA3NFoiLz48cGF0aCBmaWxsPSIjMDAwIiBkPSJNNTYgMTRIMTR2NDJoNDJWMTRaIi8+PHBhdGggZmlsbD0iI2ZmZiIgZD0iTTM0LjQxNyA0OC42NWgtMTUuNzV2Mi42ODNoMTUuNzVWNDguNjVaTTMyLjczMyAzNS4xOTJsLTEuNzMtMS41NWE4LjU2NiA4LjU2NiAwIDAgMS00LjY3IDEuMzQ4QzIxLjQ4IDM0Ljk5IDE4IDMxLjM3NCAxOCAyNi45MDV2LS4wNDVjMC00LjQ3IDMuNTI2LTguMTMgOC4zNzctOC4xMyA0Ljg1IDAgOC4zMzIgMy42MTUgOC4zMzIgOC4wODV2LjA0NWE4LjA2NCA4LjA2NCAwIDAgMS0xLjM5MiA0LjUxNGwxLjYxNyAxLjM3LTIuMjAxIDIuNDQ4Wm0tNC4yOS0zLjgxOC0yLjU2LTIuMTc5IDIuMi0yLjQ3IDIuNTg0IDIuMzM1YTUuNTEgNS41MSAwIDAgMCAuNDI2LTIuMTU1di0uMDQ1YTQuNzc3IDQuNzc3IDAgMCAwLTQuNzYtNC45NDFjLTIuNzg2IDAtNC43MTcgMi4yLTQuNzE3IDQuODk2di4wNDVhNC43NzUgNC43NzUgMCAwIDAgNC43NjEgNC45NCA0LjcyMiA0LjcyMiAwIDAgMCAyLjA2Ni0uNDI2Wk0zNy4zOTUgMTguOTk5aDUuOTIzYzQuOTQxIDAgOC4zNTUgMy4zOTEgOC4zNTUgNy44MTZ2LjA0NWMwIDQuNDI0LTMuNDE0IDcuODYtOC4zNTUgNy44NmgtNS45MjNWMTguOTk5Wm0zLjQ1OCAzLjEyMnY5LjQ3N2gyLjQ2NWMyLjgzIDAgNC43NC0xLjkwOCA0Ljc0LTQuNjkzdi0uMDQ1YTQuNTE1IDQuNTE1IDAgMCAwLTQuNzQtNC43MzloLTIuNDY1WiIvPjwvc3ZnPg=="></img> 
+            IntelliJ 激活码
+        </button>
+    </div>
+
+<!--     
+    <div id="github_field" class="badge font-size-16 event-click-openenvdir" title="github"><button type="button" class="waves-effect waves-light btn mb-5 bg-gradient-secondary">获取激活码</button> </div> -->
+    
+    <!-- <div id="go_field" class="badge badge-pill badge-primary-light font-size-16 event-click-openenvdir" title="Python"><i class="mdi mdi-language-cpp"></i> <span>C++</span> <span class="go_version"></span></div> -->
+</div>
+<!-- fa fa-times -->
+<!-- badge-primary-light -->
+<!-- badge-success-light -->
+<!-- badge-danger-light -->
+
+<!-- mdi-wan -->
+	<div class="command-container">
+    <section class="content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box command-background">
+                    <div class="box-body command-lines">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+	<div id="customContextMenu"
+    style="display: none; position: absolute; list-style-type: none; background-color: #f5f5f5; border: 1px solid #ccc;z-index: 9999999999999;">
+    <!-- 这是您的自定义右键菜单 -->
+
+    <div class="navbar-custom-menu">
+        <ul class="menu sm-scrol" style="overflow: hidden; width: auto;height: auto; ">
+            <li>
+                <a href="javascript:void(0)" onclick="window.appMenuManager.runAsAdmin()" class="contextMenuA">
+                    <img class="customContextMenuImg" src="" style="width: 30px;height: 30px;margin-left: -5px;" />
+                    运行软件(管理员)
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="window.appMenuManager.openSoftwareLocation()" class="contextMenuA">
+                    <i class="fa fa-folder-open"></i>
+                    软件位置
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" onclick="window.appMenuManager.openIconDir()" class="contextMenuA">
+                    <i class="fa  fa-file-o text-info"></i>
+                    图标位置 
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)"  onclick="window.appMenuManager.reInstall()" class="contextMenuA">
+                    <i class="fa fa-windows text-success"></i>
+                    重新安装
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" class="contextMenuA">
+                    <i class="fa  fa-cloud-download text-danger"></i>
+                    升级
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0)" class="contextMenuA">
+                    <i class="fa fa-download text-danger"></i> 备份
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+	<!-- Page Content overlay -->
+
+
+	<!-- Vendor JS -->
+	<script src="../stylesheet/js/vendors.min.js"></script>
+	<script src="../stylesheet/js/chat-popup.js"></script>
+	<script src="../stylesheet/js/feather.min.js"></script>
+
+
+	<!-- EduAdmin App -->
+	<script src="../stylesheet/js/template.js"></script>
+	<script src="../stylesheet/js/dashboard2.js"></script>
+
+	<script src="../stylesheet/js/jquery.peity.js"></script>
+	<script src="../../core/preload/preload.js"></script>
+<script src="../../core/preload/public.js"></script>
+<script src="../stylesheet/plugin/push.min.js"></script>
+<script src="../stylesheet/plugin/alertify.js"></script>
+<script src="../stylesheet/js/component-animations-css3.js"></script>
+<script src="../../core/preload/right_menu.js"></script>
+
+</body>
+
+</html>

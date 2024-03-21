@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+{include:"./include_head.html"}
+
+<body class="hold-transition light-skin sidebar-mini theme-primary fixed sidebar-collapse">
+
+	<div class="wrapper">
+
+
+		{include:"./include_header.html"}
+
+		<!-- Left side column. contains the logo and sidebar -->
+		{include:"./include_main_sidebar.html"}
+
+		<!-- Content Wrapper. Contains page content -->
+		<div class="content-wrapper">
+			<div class="container-full">
+				<!-- Content Header (Page header) -->
+				<div class="content-header">
+					<div class="d-flex align-items-center">
+						<div class="mr-auto">
+							<h3 class="page-title">toolbox</h3>
+							<div class="d-inline-block align-items-center">
+								<nav>
+									<ol class="breadcrumb">
+										<li class="breadcrumb-item"><a href="#"><i class="mdi mdi-home-outline"></i></a>
+										</li>
+										<li class="breadcrumb-item" aria-current="page">toolbox</li>
+										<li class="breadcrumb-item active" aria-current="page">Collection of commonly
+											used tools</li>
+									</ol>
+								</nav>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<!-- Main content -->
+				<section class="content">
+					<div class="row">
+						<div class="col-xl-4 connectedSortable">
+							<div class="box">
+								<div class="box-header with-border">
+									<h4 class="box-title">File monitoring</h4>
+								</div>
+								<div class="box-body p-0">
+									<ul class="todo-list">
+										<li>
+											<!-- drag handle -->
+											<span class="handle">
+												<i class="fa fa-ellipsis-v"></i>
+												<i class="fa fa-ellipsis-v"></i>
+											</span>
+											<!-- checkbox -->
+											<input type="checkbox" id="basic_checkbox_1" class="filled-in">
+											<label for="basic_checkbox_1" class="mb-0 h-15 ml-15"></label>
+											<!-- todo text -->
+											<span class="text-line">Nulla vitae purus</span>
+											<!-- Emphasis label -->
+											<small class="badge bg-danger"><i class="fa fa-clock-o"></i> 2 mins</small>
+											<!-- General tools such as edit or delete-->
+											<div class="tools">
+												<i class="fa fa-edit"></i>
+												<i class="fa fa-trash-o"></i>
+											</div>
+										</li>
+										<li>
+											<span class="handle">
+												<i class="fa fa-ellipsis-v"></i>
+												<i class="fa fa-ellipsis-v"></i>
+											</span>
+											<!-- checkbox -->
+											<input type="checkbox" id="basic_checkbox_2" class="filled-in">
+											<label for="basic_checkbox_2" class="mb-0 h-15 ml-15"></label>
+											<span class="text-line">Phasellus interdum</span>
+											<small class="badge bg-info"><i class="fa fa-clock-o"></i> 4 hours</small>
+											<div class="tools">
+												<i class="fa fa-edit"></i>
+												<i class="fa fa-trash-o"></i>
+											</div>
+										</li>
+										<li>
+											<span class="handle">
+												<i class="fa fa-ellipsis-v"></i>
+												<i class="fa fa-ellipsis-v"></i>
+											</span>
+											<!-- checkbox -->
+											<input type="checkbox" id="basic_checkbox_3" class="filled-in">
+											<label for="basic_checkbox_3" class="mb-0 h-15 ml-15"></label>
+											<span class="text-line">Quisque sodales</span>
+											<small class="badge bg-warning"><i class="fa fa-clock-o"></i> 1 day</small>
+											<div class="tools">
+												<i class="fa fa-edit"></i>
+												<i class="fa fa-trash-o"></i>
+											</div>
+										</li>
+										<li>
+											<span class="handle">
+												<i class="fa fa-ellipsis-v"></i>
+												<i class="fa fa-ellipsis-v"></i>
+											</span>
+											<!-- checkbox -->
+											<input type="checkbox" id="basic_checkbox_4" class="filled-in">
+											<label for="basic_checkbox_4" class="mb-0 h-15 ml-15"></label>
+											<span class="text-line">Proin nec mi porta</span>
+											<small class="badge bg-success"><i class="fa fa-clock-o"></i> 3 days</small>
+											<div class="tools">
+												<i class="fa fa-edit"></i>
+												<i class="fa fa-trash-o"></i>
+											</div>
+										</li>
+										<li>
+											<span class="handle">
+												<i class="fa fa-ellipsis-v"></i>
+												<i class="fa fa-ellipsis-v"></i>
+											</span>
+											<!-- checkbox -->
+											<input type="checkbox" id="basic_checkbox_5" class="filled-in">
+											<label for="basic_checkbox_5" class="mb-0 h-15 ml-15"></label>
+											<span class="text-line">Maecenas scelerisque</span>
+											<small class="badge bg-primary"><i class="fa fa-clock-o"></i> 1 week</small>
+											<div class="tools">
+												<i class="fa fa-edit"></i>
+												<i class="fa fa-trash-o"></i>
+											</div>
+										</li>
+										<li>
+											<span class="handle">
+												<i class="fa fa-ellipsis-v"></i>
+												<i class="fa fa-ellipsis-v"></i>
+											</span>
+											<!-- checkbox -->
+											<input type="checkbox" id="basic_checkbox_6" class="filled-in">
+											<label for="basic_checkbox_6" class="mb-0 h-15 ml-15"></label>
+											<span class="text-line">Vivamus nec orci</span>
+											<small class="badge bg-info"><i class="fa fa-clock-o"></i> 1 month</small>
+											<div class="tools">
+												<i class="fa fa-edit"></i>
+												<i class="fa fa-trash-o"></i>
+											</div>
+										</li>
+									</ul>
+								</div>
+
+
+								<div class="box-body">
+									<a class="popup-gmaps btn btn-info" href="javascript:;">Open Google Map</a>
+								</div>
+								<!-- /.box-body -->
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- /.content -->
+			</div>
+		</div>
+	</div>
+	<!-- ./wrapper -->
+
+	<!-- ./side demo panel -->
+	{include:"./include_setting.html"}
+	{include:"./include_sticky_toolbar_buttom.html"}
+	{include:"./include_rightmenu.html"}
+	<!-- Sidebar -->
+
+	{include:"./include_chat.html"}
+
+	<!-- Page Content overlay -->
+
+
+	<!-- Vendor JS -->
+	<script src="../stylesheet/js/vendors.min.js"></script>
+	<script src="../stylesheet/js/chat-popup.js"></script>
+	<script src="../stylesheet/js/feather.min.js"></script>
+	<script src="../stylesheet/js/jquery-ui.js"></script>
+	<script>
+		$.widget.bridge('uibutton', $.ui.button);
+	</script>
+	<!-- EduAdmin App -->
+	<script src="../stylesheet/js/template.js"></script>
+	<script src="../stylesheet/js/extra_taskboard.js"></script>
+	{include:"./include_public_script.html"}
+	<script src="../stylesheet/lib/folder_monitoring.js"></script>
+</body>
+
+</html>

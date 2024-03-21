@@ -1,0 +1,381 @@
+<section id="settingpg" class="content sessting_page" style="display: none; 
+			background: #fff; 
+			height: 95%; 
+			width: 600px; 
+			max-width: 600px; 
+			position: fixed; 
+			top: 50px; 
+			left: 0; 
+			right: 0; 
+			bottom: 0; 
+			margin: auto; 
+			padding-top: 100px;">
+			<div class="chat-box-header p-15 d-flex justify-content-between align-items-center"
+				style="height: 100px;position: absolute; top: 0; width: 100%; left: 0;">
+				<div class="text-center flex-grow-1">
+					<div class="text-dark font-size-18">配置项</div>
+				</div>
+				<div class="">
+					<button
+						class="event-click-show waves-effect waves-circle btn btn-circle btn-danger-light h-40 w-40 rounded-circle l-h-45 event-close-setting"
+						type="button">
+						<span class="icon-Close font-size-22"><span class="path1"></span><span
+								class="path2"></span></span>
+					</button>
+				</div>
+			</div>
+			<div style="
+			overflow-y: scroll; 
+			height: 100%; 
+			max-width: 100%;
+			overflow-x: hidden;
+			">
+				<div class="row">
+
+					<div class="col-12">
+						<div class="box">
+							<div class="box-header with-border">
+								<h4 class="box-title">开发语言版本</h4>
+							</div>
+							<!-- /.box-header -->
+							<div class="box-body">
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">默认Python版本</label>
+									<div class="col-md-10">
+										<input class="form-control" id="default_python" data-change="" type="text">
+										<span class="form-text text-muted">
+											<code>默认Python版本（ default_python ） 格式:3.x</code></span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">默认Java版本</label>
+									<div class="col-md-10">
+										<input class="form-control" id="default_java" data-change="" type="text">
+										<span class="form-text text-muted">
+											<code>默认Java版本（ default_java ）</code></span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">默认Node版本</label>
+									<div class="col-md-10">
+										<input class="form-control" id="default_node" data-change="" type="text">
+										<span class="form-text text-muted">
+											<code>默认Node版本（ default_node ）</code></span>
+									</div>
+								</div>
+
+							</div>
+
+							<div class="box-header with-border">
+								<h4 class="box-title">默认路径</h4>
+							</div>
+							<!-- /.box-header -->
+							<div class="box-body">
+
+
+								<div class="demo-checkbox">
+									<input type="checkbox" id="default_open_soft_mode" data-change="" value="true"
+										class="filled-in chk-col-primary" checked="">
+									<label for="default_open_soft_mode">默认以管理员方式打开软件</label>
+								</div>
+
+
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">软件路径</label>
+									<div class="col-md-10">
+										<input class="form-control" id="setting_soft_install_path" data-change=""
+											type="text">
+										<span class="form-text text-muted">
+											<code>本机默认软件安装路径 （ setting_soft_install_path ）</code></span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">语言路径</label>
+									<div class="col-md-10">
+										<input class="form-control" id="local_envdir" data-change="" type="text">
+										<span class="form-text text-muted">
+											<code>本地环境路径 （ local_envdir ）</code></span>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">项目路径</label>
+									<div class="col-md-10">
+										<input class="form-control" id="programing_dir" data-change="" type="text">
+										<span class="form-text text-muted">
+											<code>正在开发项目环境路径 （ programing_dir ）</code></span>
+									</div>
+								</div>
+							</div>
+
+							<!-- /.box-body -->
+							<div class="box-header with-border">
+								<h4 class="box-title">本机备份</h4>
+							</div>
+							<!-- /.box-header -->
+							<div class="box-body">
+
+								<div class="demo-checkbox">
+									<input type="checkbox" data-change="" value="true" id="setting_soft_backup_switch"
+										class="chk-col-primary checkbox-back_applications" checked="">
+									<label for="setting_soft_backup_switch">是否备份软件</label>
+								</div>
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">备份路径</label>
+									<div class="col-md-10">
+										<input class="form-control" id="setting_soft_local_bakup_path" data-change=""
+											type="text">
+										<span class="form-text text-muted">
+											<code>软件备份路径. （ setting_soft_local_bakup_path ），例( D:/xxx, ftp://xxx.xxx:21/user:pwd , \\192.168.100.x)</code></span>
+									</div>
+								</div>
+							</div>
+
+							<!-- /.box-body -->
+							<div class="box-header with-border">
+								<h4 class="box-title">更新设置</h4>
+							</div>
+							<!-- /.box-header -->
+							<div class="box-body">
+								<div class="form-group row">
+									<label class="col-form-label col-md-2">更新URL</label>
+									<div class="col-md-10">
+										<input class="form-control" id="setting_soft_remote_update_url" data-change=""
+											type="url">
+										<span class="form-text text-muted">
+											<code>软件有更新下载地址.（ setting_soft_remote_update_url ）例(http:// , ftp://xxx.xxx:21/user:pwd , \\192.168.100.x , D:/xxx )</code></span>
+									</div>
+								</div>
+							</div>
+							<!-- /.box-body -->
+							<div class="box-header with-border">
+								<h4 class="box-title">基本环境</h4>
+							</div>
+							<div class="box--body">
+								<h5 class="my-10">默认编程语言版本</h5>
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="btn-group bootstrap-select btn-rounded mb-20 mr-10">
+											<select class="selectpicker mb-20 mr-10" data-style="btn-primary"
+												tabindex="-98">
+												<option data-tokens="Lorem">Sed posuere metus vel maximus fringilla.
+												</option>
+												<option data-tokens="ipsum">Nam in nisl a ligula semper euismod.
+												</option>
+												<option data-tokens="dolor">Ut rhoncus diam et elit tristique
+													venenatis.</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="btn-group bootstrap-select btn-rounded mb-20 mr-10">
+											<select class="selectpicker mb-20 mr-10"
+												data-style="btn-info btn-outline-info" tabindex="-98">
+												<option data-tokens="Lorem">Sed posuere metus vel maximus fringilla.
+												</option>
+												<option data-tokens="ipsum">Nam in nisl a ligula semper euismod.
+												</option>
+												<option data-tokens="dolor">Ut rhoncus diam et elit tristique
+													venenatis.</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="btn-group bootstrap-select btn-rounded mb-20 mr-10">
+											<select class="selectpicker mb-20 mr-10" data-style="btn-warning "
+												tabindex="-98">
+												<option data-tokens="Lorem">Sed posuere metus vel maximus fringilla.
+												</option>
+												<option data-tokens="ipsum">Nam in nisl a ligula semper euismod.
+												</option>
+												<option data-tokens="dolor">Ut rhoncus diam et elit tristique
+													venenatis.</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="btn-group bootstrap-select btn-rounded mb-20 mr-10">
+											<select class="selectpicker mb-20 mr-10" data-style="btn-danger"
+												tabindex="-98">
+												<option data-tokens="Lorem">Sed posuere metus vel maximus fringilla.
+												</option>
+												<option data-tokens="ipsum">Nam in nisl a ligula semper euismod.
+												</option>
+												<option data-tokens="dolor">Ut rhoncus diam et elit tristique
+													venenatis.</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="btn-group bootstrap-select btn-rounded mb-20 mr-10">
+											<select class="selectpicker mb-20 mr-10" data-style="btn-success"
+												tabindex="-98">
+												<option data-tokens="Lorem">Sed posuere metus vel maximus fringilla.
+												</option>
+												<option data-tokens="ipsum">Nam in nisl a ligula semper euismod.
+												</option>
+												<option data-tokens="dolor">Ut rhoncus diam et elit tristique
+													venenatis.</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="btn-group bootstrap-select btn-rounded mb-20">
+											<select class="selectpicker mb-20" data-style="btn-default" tabindex="-98">
+												<option data-tokens="Lorem">Sed posuere metus vel maximus fringilla.
+												</option>
+												<option data-tokens="ipsum">Nam in nisl a ligula semper euismod.
+												</option>
+												<option data-tokens="dolor">Ut rhoncus diam et elit tristique
+													venenatis.</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /.box-body -->
+							<div class="box-header with-border">
+								<i class="fa fa-check-square-o text-black"></i>
+
+								<h4 class="box-title">已部署环境</h4>
+							</div>
+							<!-- /.box-header -->
+							<div class="box-body">
+
+								<div class="demo-checkbox">
+									<!-- <input type="checkbox" id="basic_checkbox_1" checked="">
+									<label for="basic_checkbox_1">Default</label>
+									<input type="checkbox" id="basic_checkbox_2" class="filled-in" checked="">
+									<label for="basic_checkbox_2">Filled In</label> -->
+									<input type="checkbox" id="java_installed_version" class="filled-in chk-col-success"
+										checked="" disabled="">
+									<label for="java_installed_version"><i
+											class="mdi mdi-coffee-outline text-success"></i> Java</label>
+									<input type="checkbox" id="python_installed_version"
+										class="filled-in chk-col-success" checked="" disabled="">
+									<label for="python_installed_version"><i
+											class="mdi mdi-language-python-text text-success"></i> Python</label>
+									<input type="checkbox" id="node_installed_version" class="filled-in chk-col-success"
+										checked="" disabled="">
+									<label for="node_installed_version"><i
+											class="mdi mdi-language-javascript text-success"></i> Node</label>
+									<input type="checkbox" id="rust_installed_version" class="filled-in chk-col-success"
+										checked="" disabled="">
+									<label for="rust_installed_version"><i class="mdi mdi-xml text-success"></i>
+										Rust</label>
+									<input type="checkbox" id="cplus_installed_version"
+										class="filled-in chk-col-success" checked="" disabled="">
+									<label for="cplus_installed_version"><i
+											class="mdi mdi-language-cpp text-success"></i> C++</label>
+								</div>
+
+							</div>
+							<!-- /.box-body -->
+							<div class="box-header with-border">
+								<i class="fa fa-check-square-o text-black"></i>
+
+								<h4 class="box-title">Basic Checkbox Design Colors with Filled In</h4>
+							</div>
+							<!-- /.box-header -->
+							<div class="box-body">
+
+								<div class="demo-checkbox">
+									<input type="checkbox" id="md_checkbox_21" class="filled-in chk-col-primary"
+										checked="">
+									<label for="md_checkbox_21">Primary</label>
+									<input type="checkbox" id="md_checkbox_23" class="filled-in chk-col-success"
+										checked="">
+									<label for="md_checkbox_23">Success</label>
+									<input type="checkbox" id="md_checkbox_24" class="filled-in chk-col-info"
+										checked="">
+									<label for="md_checkbox_24">Info</label>
+									<input type="checkbox" id="md_checkbox_27" class="filled-in chk-col-warning"
+										checked="">
+									<label for="md_checkbox_27">Warning</label>
+									<input type="checkbox" id="md_checkbox_29" class="filled-in chk-col-danger"
+										checked="">
+									<label for="md_checkbox_29">Danger</label>
+								</div>
+
+							</div>
+							<!-- /.box-body -->
+							<div class="box-header with-border">
+								<i class="fa fa-check-circle text-black"></i>
+
+								<h4 class="box-title">Basic Radio Button</h4>
+							</div>
+							<!-- /.box-header -->
+							<div class="box-body">
+
+								<div class="demo-radio-button">
+									<input name="group1" type="radio" id="radio_1" checked="">
+									<label for="radio_1">Radio - 1</label>
+									<input name="group1" type="radio" id="radio_2">
+									<label for="radio_2">Radio - 2</label>
+									<input name="group1" type="radio" class="with-gap" id="radio_3">
+									<label for="radio_3">Radio - With Gap</label>
+									<input name="group1" type="radio" id="radio_4" class="with-gap">
+									<label for="radio_4">Radio - With Gap</label>
+									<input name="group2" type="radio" id="radio_5" checked="" disabled="">
+									<label for="radio_5">Radio - Disabled</label>
+									<input name="group3" type="radio" id="radio_6" class="with-gap" checked=""
+										disabled="">
+									<label for="radio_6">Radio - Disabled</label>
+								</div>
+
+							</div>
+							<!-- /.box-body -->
+							<div class="box-header with-border">
+								<i class="fa fa-check-circle text-black"></i>
+
+								<h4 class="box-title">Basic Radio Button Design Colors</h4>
+							</div>
+							<!-- /.box-header -->
+							<div class="box-body">
+
+								<div class="demo-radio-button">
+									<input name="group4" type="radio" id="radio_7" class="radio-col-primary" checked="">
+									<label for="radio_7">Primary</label>
+									<input name="group4" type="radio" id="radio_9" class="radio-col-success">
+									<label for="radio_9">Success</label>
+									<input name="group4" type="radio" id="radio_10" class="radio-col-info">
+									<label for="radio_10">Info</label>
+									<input name="group4" type="radio" id="radio_12" class="radio-col-warning">
+									<label for="radio_12">Warning</label>
+									<input name="group4" type="radio" id="radio_13" class="radio-col-danger">
+									<label for="radio_13">Danger</label>
+								</div>
+
+							</div>
+							<!-- /.box-body -->
+							<div class="box-header with-border">
+								<i class="fa fa-check-circle-o text-black"></i>
+
+								<h4 class="box-title">Basic Radio Button Design Colors with Outline</h4>
+							</div>
+							<!-- /.box-header -->
+							<div class="box-body">
+
+								<div class="demo-radio-button">
+									<input name="group5" type="radio" id="radio_30" class="with-gap radio-col-primary"
+										checked="">
+									<label for="radio_30">Primary</label>
+									<input name="group5" type="radio" id="radio_32" class="with-gap radio-col-success">
+									<label for="radio_32">Success</label>
+									<input name="group5" type="radio" id="radio_33" class="with-gap radio-col-info">
+									<label for="radio_33">Info</label>
+									<input name="group5" type="radio" id="radio_35" class="with-gap radio-col-warning">
+									<label for="radio_35">Warning</label>
+									<input name="group5" type="radio" id="radio_36" class="with-gap radio-col-danger">
+									<label for="radio_36">Danger</label>
+								</div>
+
+							</div>
+							<!-- /.box-body -->
+						</div>
+						<!-- /.box -->
+					</div>
+					<!-- ./col -->
+				</div>
+			</div>
+			<!-- /.row -->
+		</section>
